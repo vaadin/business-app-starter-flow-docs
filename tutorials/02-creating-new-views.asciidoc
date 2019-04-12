@@ -1,4 +1,4 @@
-= Creating a New View
+= Creating New Views
 
 The bare minimum needed when creating a new view is to define the `Route`, and to extend `Component` directly (*example 1*) or indirectly (*example 2*).
 
@@ -10,7 +10,7 @@ If you extend `Component` directly, you must annotate the class with `@Tag`, e.g
 
 [source,java]
 ----
-@Route(value = <URL_fragment>, layout = Root.class)
+@Route(value = <URL_fragment>, layout = MainLayout.class)
 @Tag("div")
 public class MyView extends Component {
   public MyView() {
@@ -23,7 +23,7 @@ public class MyView extends Component {
 == Example 2: Extending Div
 [source,java]
 ----
-@Route(value = <URL_fragment>, layout = Root.class)
+@Route(value = <URL_fragment>, layout = MainLayout.class)
 public class MyView extends Div {
   public MyView() {
     // Content goes here.
@@ -37,7 +37,7 @@ public class MyView extends Div {
 `setViewHeader`, `setViewContent` and `setViewFooter` all take a set of components, and puts them in their respective slot. All slots are optional.
 [source,java]
 ----
-@Route(value = <URL_fragment>, layout = Root.class)
+@Route(value = <URL_fragment>, layout = MainLayout.class)
 public class MyView extends ViewFrame {
   public MyView() {
     setViewHeader(Component... components);
