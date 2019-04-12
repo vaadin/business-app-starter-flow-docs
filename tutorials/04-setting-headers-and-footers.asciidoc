@@ -22,7 +22,11 @@ private void initHeadersAndFooters() {
 }
 ----
 
+image::images/04/header-outer.png[]
+
 If you instead use `setAppHearInner` you get:
+
+image::images/04/header-inner.png[]
 
 == Footers
 Most typically used for mobile navigation. Status bars, toolbars and summaries are also pretty common.
