@@ -1,0 +1,80 @@
+= Setting Headers & Footers
+
+As stated in the link:https://vaadin.com[documentation], the Responsive App Template is structured as follows:
+
+image::images/04/structure.png[]
+
+You can configure the headers and footers in `MainLayout::initHeadersAndFooters`. The only difference between these is their placement in the UI. Any `Component`, and any number of `Components`, can be slotted in.
+
+== Headers
+Headers typically house logos, titles, toolbars and tabs.
+
+=== Example
+How to place `Tabs` in the outer/inner header.
+
+[source,java]
+----
+private void initHeadersAndFooters() {
+  Tab tab1 = new Tab("Tab 1");
+  Tab tab2 = new Tab("Tab 2");
+  Tabs tabs = new Tabs(tab1, tab2);
+  setAppHeaderOuter(tabs);
+}
+----
+
+If you instead use `setAppHearInner` you get:
+
+== Footers
+Most typically used for mobile navigation. Status bars, toolbars and summaries are also pretty common.
+
+=== Example 1
+Using the inner footer for mobile navigation.
+
+[source,java]
+----
+Button home = UIUtils.createTertiaryButton(VaadinIcon.HOME);
+Button clock = UIUtils.createTertiaryButton(VaadinIcon.CLOCK);
+Button users = UIUtils.createTertiaryButton(VaadinIcon.USERS);
+Button search = UIUtils.createTertiaryButton(VaadinIcon.SEARCH);
+Button bell = UIUtils.createTertiaryButton(VaadinIcon.BELL);
+
+// Set the width
+for (Button button : new Button[]{home, clock, users, search, bell}) {
+  button.setWidth("20%");
+}
+
+FlexLayout footer = new FlexLayout(home, clock, users, search, bell);
+
+// Set background color and shadow
+UIUtils.setBackgroundColor(LumoStyles.Color.BASE_COLOR, footer);
+UIUtils.setShadow(LumoStyles.Shadow.M, footer);
+
+setAppFooterInner(footer);
+----
+
+=== Example 2
+Status bar located in the outer footer.
+
+[source,java]
+----
+Icon icon = UIUtils.createIcon(IconSize.SMALL, TextColor.SUCCESS, VaadinIcon.CHECK);
+Label label = UIUtils.createLabel(FontSize.S, TextColor.BODY, "Online");
+
+FlexLayout footer = new FlexLayout(icon, label);
+
+// Set the alignment
+footer.setAlignItems(Alignment.CENTER);
+
+// Add spacing and padding
+footer.addClassNames(
+  LumoStyles.Spacing.Right.S,
+  LumoStyles.Padding.Horizontal.M,
+  LumoStyles.Padding.Vertical.S
+);
+
+// Set background color and shadow
+UIUtils.setBackgroundColor(LumoStyles.Color.BASE_COLOR, footer);
+UIUtils.setShadow(LumoStyles.Shadow.M, footer);
+
+setAppFooterInner(footer);
+----

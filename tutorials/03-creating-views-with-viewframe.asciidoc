@@ -48,7 +48,7 @@ public class MyView extends ViewFrame {
 }
 ----
 
-image::images/example.png[]
+image::images/03/example.png[]
 
 If we wanted to distinguish the slots from one another, we could utilise some of the styles that the Responsive App Template provides, e.g. *borders* and *shadows*.
 
@@ -61,7 +61,7 @@ header.addClassName(BoxShadowBorders.BOTTOM);
 footer.addClassName(BoxShadowBorders.TOP);
 ----
 
-image::images/example-borders.png[]
+image::images/03/example-borders.png[]
 
 == Shadows
 Applying shadows using `addClassName`:
@@ -77,7 +77,7 @@ Alternatively you can use the `UIUtils` utility class:
 UIUtils.setShadow(Shadow.S, header, footer);
 ----
 
-image::images/example-shadows.png[]
+image::images/03/example-shadows.png[]
 
 == Background Color
 You can also change the background color on the server-side using `UIUtils`.
@@ -86,7 +86,6 @@ You can also change the background color on the server-side using `UIUtils`.
 UIUtils.setBackgroundColor(LumoStyles.Color.BASE_COLOR, header, footer);
 ----
 
-image::images/example-background.png[]
-
+image::images/03/example-background.png[]
 
 For more information on how to theme your application using the various Responsive App Template utilities please see link:https://vaadin.com[Styling & Theming].
