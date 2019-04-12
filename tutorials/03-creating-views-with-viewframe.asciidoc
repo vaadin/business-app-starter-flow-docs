@@ -80,12 +80,13 @@ UIUtils.setShadow(Shadow.S, header, footer);
 image::images/example-shadows.png[]
 
 == Background Color
-You can also change the background color on the server-side by using `UIUtils`.
+You can also change the background color on the server-side using `UIUtils`.
 [source,java]
 ----
 UIUtils.setBackgroundColor(LumoStyles.Color.BASE_COLOR, header, footer);
 ----
 
 image::images/example-background.png[]
+
 
 For more information on how to theme your application using the various Responsive App Template utilities please see link:https://vaadin.com[Styling & Theming].
