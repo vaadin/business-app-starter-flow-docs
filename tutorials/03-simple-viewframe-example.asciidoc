@@ -58,7 +58,6 @@ public class MyView extends ViewFrame {
 
 image::images/03/example.png[]
 
-[%hardbreaks]
 If we wanted to distinguish the slots from one another, we could utilise some of the styles that the Responsive App Template provides, e.g. *borders* and *shadows*.
 
 == Borders
@@ -96,5 +95,6 @@ UIUtils.setBackgroundColor(LumoStyles.Color.BASE_COLOR, header, footer);
 ----
 
 image::images/03/example-background.png[]
+
 
 For more information on how to theme your application using the various Responsive App Template utilities please see link:https://vaadin.com[Styling & Theming].
