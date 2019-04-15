@@ -58,6 +58,7 @@ public class MyView extends ViewFrame {
 
 image::images/03/example.png[]
 
+[%hardbreaks]
 If we wanted to distinguish the slots from one another, we could utilise some of the styles that the Responsive App Template provides, e.g. *borders* and *shadows*.
 
 == Borders
