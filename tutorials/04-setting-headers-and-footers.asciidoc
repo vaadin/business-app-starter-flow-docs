@@ -1,10 +1,10 @@
 = Setting Headers & Footers
 
-As stated in the link:https://vaadin.com[documentation], the Responsive App Template is structured as follows:
+As stated in the link:https://vaadin.com[documentation] the Responsive App Template is structured as follows:
 
 image::images/04/structure.png[]
 
-You can configure the headers and footers in `MainLayout::initHeadersAndFooters`. The only difference between these is their placement in the UI. Any `Component`, and any number of `Components`, can be slotted in.
+You can configure the application's headers and footers in `MainLayout::initHeadersAndFooters`. The only difference between these is their placement in the UI. Any `Component`, and any number of `Components`, can be slotted in.
 
 == Headers
 Headers typically house logos, titles, toolbars and tabs.

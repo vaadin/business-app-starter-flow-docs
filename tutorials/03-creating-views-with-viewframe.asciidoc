@@ -2,6 +2,14 @@
 
 `ViewFrame` simplifies the process of creating views with a header, scrollable content and footer. Please note that `ViewFrame` does not set any margin, padding or spacing by default. It simply provides the structure.
 
+The three main methods of `ViewFrame` are:
+
+* `setViewHeader(Component... components)`
+* `setViewContent(Component... components)`
+* `setViewFooter(Component... components)`
+
+These slots can contain any component and any number of components. The content slot will take up any available vertical space and scroll automatically upon overflow.
+
 == Example
 A simple example view using default Vaadin components.
 
