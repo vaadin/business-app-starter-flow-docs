@@ -51,18 +51,20 @@ FlexLayout footer = new FlexLayout(home, clock, users, search, bell);
 
 // Set background color and shadow
 UIUtils.setBackgroundColor(LumoStyles.Color.BASE_COLOR, footer);
-UIUtils.setShadow(LumoStyles.Shadow.M, footer);
+UIUtils.setShadow(Shadow.M, footer);
 
 setAppFooterInner(footer);
 ----
+
+image::images/04/example-footer-inner.png[]
 
 === Example 2
 Status bar located in the outer footer.
 
 [source,java]
 ----
-Icon icon = UIUtils.createIcon(IconSize.SMALL, TextColor.SUCCESS, VaadinIcon.CHECK);
-Label label = UIUtils.createLabel(FontSize.S, TextColor.BODY, "Online");
+Icon icon = UIUtils.createIcon(IconSize.S, TextColor.SUCCESS, VaadinIcon.CHECK);
+Label label = UIUtils.createLabel(FontSize.XS, TextColor.BODY, "Online");
 
 FlexLayout footer = new FlexLayout(icon, label);
 
@@ -72,13 +74,14 @@ footer.setAlignItems(Alignment.CENTER);
 // Add spacing and padding
 footer.addClassNames(
   LumoStyles.Spacing.Right.S,
-  LumoStyles.Padding.Horizontal.M,
-  LumoStyles.Padding.Vertical.S
+  LumoStyles.Padding.Wide.M
 );
 
 // Set background color and shadow
 UIUtils.setBackgroundColor(LumoStyles.Color.BASE_COLOR, footer);
-UIUtils.setShadow(LumoStyles.Shadow.M, footer);
+UIUtils.setShadow(Shadow.M, footer);
 
-setAppFooterInner(footer);
+setAppFooterOuter(footer);
 ----
+
+image::images/04/example-footer-outer.png[]
