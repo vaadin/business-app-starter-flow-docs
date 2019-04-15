@@ -130,6 +130,8 @@ image::images/05/tall.png[]
 === Uniform
 An equal amount of margin, padding and spacing in all directions.
 
+image::images/05/uniform.png[]
+
 ==== Margin
 `addClassName(*LumoStyles.Margin.Uniform.XS*);`
 `addClassName(*LumoStyles.Margin.Uniform.S*);`
