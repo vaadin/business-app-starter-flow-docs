@@ -96,5 +96,4 @@ UIUtils.setBackgroundColor(LumoStyles.Color.BASE_COLOR, header, footer);
 
 image::images/03/example-background.png[]
 
-
 For more information on how to theme your application using the various Responsive App Template utilities please see link:https://vaadin.com[Styling & Theming].
