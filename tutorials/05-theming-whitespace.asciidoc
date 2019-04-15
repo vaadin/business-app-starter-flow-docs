@@ -30,7 +30,7 @@ And nine different _directions_:
 * `UNIFORM` (default)
 * `WIDE`
 
-Use the following formula to apply margin, padding, or spacing: `component.addClassName(LumoStyles.<TYPE>.<DIRECTION>.<SIZE>)`.
+Use the following formula to apply margin, padding, or spacing: `component.addClassName(LumoStyles.<PROPERTY>.<DIRECTION>.<SIZE>)`.
 
 For example:
 [source,java]
