@@ -11,7 +11,11 @@ The `H1`, `H2`, `H3`, `H4`, `H5` and `H6` headings all have margin by default, w
 * `UIUtils.*createH6Label*(String)`
 
 == Font Size
-Lumo defines 8 different font sizes: `XXXL`, `XXL`, `XL`, `L`, `M` (default), `S`, `XS` and `XXS`. The Responsive App Template makes it easy to create labels of a specific size (*example 1*). You can also set the font size for other components using class names (*example 2*).
+Lumo defines 8 different font sizes: `XXS`, `XS`, `S`, `M` (default), `L`, `XL`, `XXL` and `XXXL`.
+
+image::images/06/font-size.png[]
+
+The Responsive App Template makes it easy to create labels of a specific size (*example 1*). You can also set the font size for other components using class names (*example 2*).
 
 === Example 1: Using UIUtils
 Creating a label with a specific font size.
@@ -28,19 +32,9 @@ component.addClassName(FontSize.XL.getClassName());
 ----
 
 == Text Color
-There are 11 text colors in Lumo:
+There are 11 text colors in Lumo: `HEADER`, `BODY`, `SECONDARY`, `TERTIARY`, `DISABLED`, `PRIMARY`, `PRIMARY_CONTRAST`, `ERROR`, `ERROR_CONTRAST`, `SUCCESS` and `SUCCESS_CONTRAST`.
 
-* `HEADER`
-* `BODY`
-* `SECONDARY`
-* `TERTIARY`
-* `DISABLED`
-* `PRIMARY`
-* `PRIMARY_CONTRAST`
-* `ERROR`
-* `ERROR_CONTRAST`
-* `SUCCESS`
-* `SUCCESS_CONTRAST`
+image::images/06/text-color.png[]
 
 You can use `UIUtils` to create labels with a specific text color (*example 3*). For other components you can use class names (*example 4*).
 
