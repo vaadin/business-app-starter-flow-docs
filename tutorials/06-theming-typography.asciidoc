@@ -1,0 +1,77 @@
+= Theming: Typography
+
+== Headings
+The `H1`, `H2`, `H3`, `H4`, `H5` and `H6` headings all have margin by default, which is not always desirable (e.g. when used in application headers). To create headings _without_ margins:
+
+* `UIUtils.*createH1Label*(String)`
+* `UIUtils.*createH2Label*(String)`
+* `UIUtils.*createH3Label*(String)`
+* `UIUtils.*createH4Label*(String)`
+* `UIUtils.*createH5Label*(String)`
+* `UIUtils.*createH6Label*(String)`
+
+== Font Size
+Lumo defines 8 different font sizes: `XXXL`, `XXL`, `XL`, `L`, `M` (default), `S`, `XS` and `XXS`. The Responsive App Template makes it easy to create labels of a specific size (*example 1*). You can also set the font size for other components using class names (*example 2*).
+
+=== Example 1: Using UIUtils
+Creating a label with a specific font size.
+[source,java]
+----
+UIUtils.createLabel(FontSize.XL, "Hello World!");
+----
+
+=== Example 2: Using Class Name
+You _can_ also apply a class name to set the font size.
+[source,java]
+----
+component.addClassName(FontSize.XL.getClassName());
+----
+
+== Text Color
+There are 11 text colors in Lumo:
+
+* `HEADER`
+* `BODY`
+* `SECONDARY`
+* `TERTIARY`
+* `DISABLED`
+* `PRIMARY`
+* `PRIMARY_CONTRAST`
+* `ERROR`
+* `ERROR_CONTRAST`
+* `SUCCESS`
+* `SUCCESS_CONTRAST`
+
+You can use `UIUtils` to create labels with a specific text color (*example 3*). For other components you can use class names (*example 4*).
+
+=== Example 3: Using UIUtils
+Creating a label with a specific text color.
+[source,java]
+----
+UIUtils.createLabel(TextColor.PRIMARY, "Hello World!");
+----
+
+=== Example 4: Using Class Name
+You _can_ also apply a class name to set the text color.
+[source,java]
+----
+component.addClassName(TextColor.PRIMARY.getClassName());
+----
+
+== Combining Font Size & Text Color
+=== Example 5: Using UIUtils
+Creating a label with a specific font size and text color.
+[source,java]
+----
+UIUtils.createLabel(FontSize.S, TextColor.SUCCESS, "Hello World!");
+----
+
+=== Example 6: Using Class Names
+You _can_ also apply a class names to try and set the text color.
+[source,java]
+----
+component.addClassNames(
+  FontSize.S.getClassName(),
+  TextColor.SUCCESS.getClassName()
+);
+----

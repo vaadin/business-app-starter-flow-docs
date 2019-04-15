@@ -1,6 +1,6 @@
 = Theming: Whitespace
 
-Whitespace can be applied using three different properties:
+Whitespace can be applied using three different _properties_:
 
 * Margin
 * Padding
