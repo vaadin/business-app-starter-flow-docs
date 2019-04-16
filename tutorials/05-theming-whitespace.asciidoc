@@ -1,5 +1,6 @@
 = Theming: Whitespace
 
+== Properties
 [%hardbreaks]
 Whitespace can be applied using three different _properties_:
 `Margin`, `Padding`, `Spacing`
@@ -8,10 +9,12 @@ If you use `HorizontalLayout` or `VerticalLayout` you can use `setMargin(true)`,
 
 However, these methods aren’t available for `Div`, `FlexLayout` or any other container. The Responsive App Template enables you to apply margin, padding and spacing on any `Component` using class names.
 
+== Sizes
 [%hardbreaks]
 There are five different _sizes_:
 `XS`, `S`, `M` (default), `L`, `XL`
 
+== Directions
 [%hardbreaks]
 And nine different _directions_:
 `BOTTOM`, `LEFT`, `RIGHT`, `TOP`, `HORIZONTAL`, `VERTICAL`, `TALL`, `UNIFORM` (default), `WIDE`
