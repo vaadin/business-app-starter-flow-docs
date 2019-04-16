@@ -2,7 +2,7 @@
 
 == Properties
 [%hardbreaks]
-Whitespace can be applied using three different properties: `*Margin*`, `*Padding*` and `Spacing`.
+Whitespace can be applied using three different properties: `*Margin*`, `*Padding*` and `*Spacing*`.
 
 If you use `HorizontalLayout` or `VerticalLayout` you can use `setMargin(true)`, `setPadding(true)` and `setSpacing(true)`.
 
@@ -10,11 +10,11 @@ However, these methods aren’t available for `Div`, `FlexLayout` or any other c
 
 == Sizes
 [%hardbreaks]
-There are five different sizes: `XS`, `S`, `M` (default), `L` and `XL`.
+There are five different sizes: `*XS*`, `*S*`, `*M*` (default), `*L*` and `*XL*`.
 
 == Directions
 [%hardbreaks]
-And nine different directions: `BOTTOM`, `LEFT`, `RIGHT`, `TOP`, `HORIZONTAL`, `VERTICAL`, `TALL`, `UNIFORM` (default) and `WIDE`.
+And nine different directions: `*BOTTOM*`, `*LEFT*`, `*RIGHT*`, `*TOP*`, `*HORIZONTAL*`, `*VERTICAL*`, `*TALL*`, `*UNIFORM*` (default) and `*WIDE*`.
 
 == Example
 Use the following formula to apply margin, padding, or spacing: `component.addClassName(LumoStyles.<PROPERTY>.<DIRECTION>.<SIZE>)`.
