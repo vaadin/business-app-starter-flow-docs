@@ -115,81 +115,64 @@ component.addClassName(LumoStyles.Margin.Bottom.M);
 Lumo styles:
 https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
 
+===== FontFamily
+`MONOSPACE`
 
-FontSize
-XXS
-XS
-S
-M
-L
-XL
-XXL
-XXXL
+<example>
 
-IconSize
-SMALL
-LARGE
+===== FontSize
+`XXS`, `XS`, `S`, `M`, `L`, `XL`, `XXL`, `XXXL`
 
-TextColor
-HEADER
-BODY
-SECONDARY
-TERTIARY
-DISABLED
-PRIMARY
-ERROR
-SUCCESS
+<example>
 
-LumoStyles
-FontFamily
-MONOSPACE
+===== FontWeight
+`BOLD`, `BOLDER`, `LIGHTER`, `NORMAL`, `_100`, `_200`, `_300`, `_400`, `_500`, `_600`, `_700`, `_800`, `_900`
 
-LumoStyles
-FontWeight
-MEDIUM
+<example>
 
-LumoStyles
-Header
-H1
-H2
-H3
-H4
-H5
-H6
+===== IconSize
+`S`, `M`, `L`
+
+<example>
+
+===== TextColor
+`HEADER`, `BODY`, `SECONDARY`, `TERTIARY`, `DISABLED`, `PRIMARY`, `PRIMARY_CONTRAST`, `ERROR`, `ERROR_CONTRAST`, `SUCCESS`, `SUCCESS_CONTRAST`
+
+<example>
+
+===== Header
+`H1`, `H2`, `H3`, `H4`, `H5`, `H6`
+
+<example>
 
 ==== Colors
-Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.1/demo/colors.html
+Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/colors.html
 
-LumoStyles
-DARK
-THEME
+===== Base
+`BASE_COLOR`
 
-LumoStyles
-Color
-BASE_COLOR
-CONTRAST_5
-CONTRAST_10
-CONTRAST_20
-CONTRAST_30
-CONTRAST_40
-CONTRAST_50
-CONTRAST_60
-CONTRAST_70
-CONTRAST_80
-CONTRAST_90
+===== Primary
+`_10`, `_50`, `_100`
 
-TextColor
-HEADER
-BODY
-SECONDARY
-TERTIARY
-DISABLED
-PRIMARY
-ERROR
-SUCCESS
+===== Error
+`_10`, `_50`, `_100`
+
+===== Success
+`_10`, `_50`, `_100`
+
+===== Tint
+`_5`, `_10`, `_20`, `_30`, `_40`, `_50`, `_60`, `_70`, `_80`, `_90`, `_100`
+
+===== Shade
+`_5`, `_10`, `_20`, `_30`, `_40`, `_50`, `_60`, `_70`, `_80`, `_90`, `_100`
+
+===== Contrast
+`_5`, `_10`, `_20`, `_30`, `_40`, `_50`, `_60`, `_70`, `_80`, `_90`, `_100`
+
+<example>
 
 ==== Style
-Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.1/demo/styles.html
+Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/styles.html
 
 LumoStyles
 BorderRadius
