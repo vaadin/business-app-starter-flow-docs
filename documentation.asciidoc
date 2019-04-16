@@ -174,115 +174,38 @@ Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/colors.html
 ==== Style
 Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/styles.html
 
-LumoStyles
-BorderRadius
-S
-M
-L
-_50
+===== BorderRadius
+`S`, `M`, `L`, `_50`
 
-LumoStyles
-Shadow
-S
-M
-L
-XL
+<example>
 
-BoxShadowBorders
-TOP
-BOTTOM
-LEFT
-RIGHT
+===== BoxShadowBorders
+`BOTTOM`, `LEFT`, `RIGHT`, `TOP`
+
+===== Shadow
+`S`, `M`, `L`, `XL`
+
+<example>
 
 ==== Sizing and Spacing
-Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.1/demo/sizing-and-spacing.html
+Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/sizing-and-spacing.html
 
-LumoStyles
-Margin
-Uniform
-Top
-Bottom
-Left
-Right
-Tall
-Wide
-AUTO
-XS
-S
-M
-L
-XL
+|===
+|Property |Size |Direction
 
-LumoStyles
-Margin
-Responsive.Horizontal
-Responsive.Vertical
-
-LumoStyles
-Padding
-Uniform
-Top
-Bottom
-Left
-Right
-Tall
-Wide
-XS
-S
-M
-L
-XL
-
-LumoStyles
-Padding
-Responsive.Horizontal
-Responsive.Vertical
-
-LumoStyles
-Spacing
-Uniform
-Top
-Bottom
-Left
-Right
-Tall
-Wide
-XS
-S
-M
-L
-XL
-
-LumoStyles
-Size
-XS
-S
-M
-L
-XL
+|`Margin`, `Padding`, `Spacing`
+|`XS`, `S`, `M` (default), `L`, `XL`
+|`BOTTOM`, `LEFT`, `RIGHT`, `TOP`, `HORIZONTAL`, `VERTICAL`, `TALL`, `UNIFORM` (default), `WIDE`
+|===
 
 === Utility Classes
-RAT introduces number of utility classes to ease applying consistent styling and improve efficiency when initializing the most commonly needed UI elements.
+RAT introduces number of utility classes to ease applying consistent styling and improve efficiency when initialising the most commonly needed UI elements.
 
 ==== Example
 Label title = UIUtils.createH2Label("Title");
 This will output an <label> element that already has suitable stylename in place.
-Layouts
-(Jonte: the createFlexLayout, createFormLayout and createDiv are only used to add “inline” styles. Might be dumb to have this in the API.)
-createFormLayout
-Initalizes Vaadin Form layout
-createDiv
-Initializes an <div> element
-createRightAlignedDiv
-Initializes an <div> element, with text aligned to right. Mainly used in grids.
-createFlexLayout
-Initializes FlexLayout
-createWrappingFlexLayout
-Initializes FlexLayout, with wrapping
-createColumn
-Initializes FlexLayout with FlexDirection set to column
 
-Buttons
+==== Buttons
 Most commonly used button variations can be produced with utility classes. All button variations may include text label and/or icon.
 
 Types

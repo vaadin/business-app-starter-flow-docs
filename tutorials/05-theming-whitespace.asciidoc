@@ -1,34 +1,20 @@
 = Theming: Whitespace
 
+[%hardbreaks]
 Whitespace can be applied using three different _properties_:
-
-* Margin
-* Padding
-* Spacing
+`Margin`, `Padding`, `Spacing`
 
 If you use `HorizontalLayout` or `VerticalLayout` you can use `setMargin(true)`, `setPadding(true)` and `setSpacing(true)`.
 
 However, these methods aren’t available for `Div`, `FlexLayout` or any other container. The Responsive App Template enables you to apply margin, padding and spacing on any `Component` using class names.
 
+[%hardbreaks]
 There are five different _sizes_:
+`XS`, `S`, `M` (default), `L`, `XL`
 
-* `XS`
-* `S`
-* `M` (default)
-* `L`
-* `XL`
-
+[%hardbreaks]
 And nine different _directions_:
-
-* `BOTTOM`
-* `LEFT`
-* `RIGHT`
-* `TOP`
-* `HORIZONTAL`
-* `VERTICAL`
-* `TALL`
-* `UNIFORM` (default)
-* `WIDE`
+`BOTTOM`, `LEFT`, `RIGHT`, `TOP`, `HORIZONTAL`, `VERTICAL`, `TALL`, `UNIFORM` (default), `WIDE`
 
 Use the following formula to apply margin, padding, or spacing: `component.addClassName(LumoStyles.<PROPERTY>.<DIRECTION>.<SIZE>)`.
 
