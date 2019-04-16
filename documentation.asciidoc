@@ -1,0 +1,418 @@
+== Layout structure
+The application structure consists of several slots that are designed to help with implementing any desired layout.
+
+image::images/structure.png[]
+
+=== Headers and Footers
+These slots are intended to be used for application wide elements such as global navigation/actions or branding. Combination of either outer or inner header slot and side navigation greatly affects the structure of the application.
+
+In case both inner and outer elements are used, ensure that there is a clear hierarchy in content and the areas do not demand too much vertical space.
+
+=== Navigation
+Navigation slot is reserved only for sidebar navigation. The slot introduces few neat features built-in. It can be collapsed and the view slot will automatically adapt to increased space. There’s also two different modes that configure the behaviour of navigation.
+
+The slot itself consists of three parts.
+
+* The scrolling *navi-content* area which is intended location for navigation links.
+* On top of *navi-content* there is *navi-header* which is the most prominent part of the UI. Navi-header can be used for branding or elements that have to be available throughout the application.
+* Navi-footer is the part below *navi-content* and it’s fixed to bottom of navigation.
+
+Be cautious when using both *navi-header* and *navi-footer* parts that there is reasonable amount of vertical space left for *navi-content*. *Navi-header* and *navi-footer* will always take all the space that they require and *navi-content* will get the rest.
+
+=== Views
+Any view specific and dynamic parts of the UI should be placed in in view slot. This is the part that changes when navigation events occur.
+
+Creating a new view by extending the *ViewFrame* will give three predefined parts.
+
+* *View-header* can be used for view name/identifiers, view specific actions or secondary navigation for example.
+* The actual content is displayed in *view-content*. This area should be taking most of the screen estate as it has the main content and other areas should contain only supportive elements.
+* *View-footer* can be used for view actions, summary data or info about selections.
+
+More parts can be introduced by extending the default structure.
+
+=== Layout Examples
+Here’s a few examples of common layouts used in business applications.
+
+image::images/layout-01.png[]
+
+Very common layout where header area on top is the most prominent element. View area uses header to show the view title.
+
+Used slots
+
+* Header (outer)
+* Navigation drawer
+* View with header
+
+***
+
+image::images/layout-02.png[]
+
+This layout puts more focus on the sidebar navigation. Suitable for complex hierarchical navigation structures. View area has footer that includes action buttons.
+
+Used slots
+
+* Header (inner)
+* Navigation drawer
+* View with footer
+
+***
+
+image::images/layout-03.png[]
+
+The navigation is placed in header. View area is maximised but navigation has to be rather simple. View sidebar is used to display additional details.
+
+Used slots
+
+* Header (outer)
+* View with sidebar
+
+== Custom Components
+
+=== Closable Tabs
+An additional feature to Vaadin Tabs that allows discarding tabs. Used in Tabs navigation mode.
+
+=== App Bars
+
+=== Navigation Drawer
+Navigation drawer is a custom-made sidebar element that has some commonly needed functionalities built-in. Configurable slots provide freedom in definition of navigation. Navigation sidebar has header and footer slots to display any desired content in relation with navigation links.
+
+Responsiveness and collapsed mode are built-in navigation. By default navigation is collapsed when viewport width is less than 1024px. Navigation sidebar can also be collapsed manually on all viewport sizes to increase the amount of space available for view content.
+
+The application supports two different navigation modes. Links mode is the most traditional way of navigation where each link change the currently active view. In Tabs mode additional tab bar is added to UI and each navigation event changes the active tab. Tabs mode allows browser-like functionality by having multiple views open simultaneously.
+
+=== List Item
+List item is used to display an entity in formatted manner. Most common use is to display an icon together with a caption and value. There are few built-in options to alter the appearance.
+
+=== Details Drawer
+
+=== Divider
+
+=== FlexBoxLayout
+FlexBoxLayout is a server-side implementation of link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout[CSS Flexible Box Layout]. It extends FlexLayout and contains convenience methods for setting `background-color`, `flex`, `flex-basis`, `flex-direction`, `flex-shrink`, `flex-wrap`, `margin`, `overflow`, `padding`, `shadow`, `spacing` and `theme`.
+
+== Theming
+Responsive App Template uses the Lumo theme which is the main theme for all Vaadin web components. Lumo uses CSS Variables to control color values, margin sizes and typography for example. Almost any visual style can be achieved just by tweaking the predefined CSS Variables. For the more advanced modifications Vaadin introduces ThemableMixin which allows separately theming the ShadowDOM parts of each component.
+
+[%hardbreaks]
+Full Lumo documentation:
+https://vaadin.com/themes/lumo
+
+[%hardbreaks]
+ThemableMixin documentation:
+https://github.com/vaadin/vaadin-themable-mixin/wiki
+
+=== Theme properties
+Lumo defines a set of CSS custom properties you can use to apply consistent visual styles across your application. To help applying the CSS properties from server-side Java, RAT introduces theme properties.
+
+For example to apply a medium size bottom margin:
+[source,java]
+----
+component.addClassName(LumoStyles.Margin.Bottom.M);
+----
+
+==== Typography
+[%hardbreaks]
+Lumo styles:
+https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
+
+
+FontSize
+XXS
+XS
+S
+M
+L
+XL
+XXL
+XXXL
+
+IconSize
+SMALL
+LARGE
+
+TextColor
+HEADER
+BODY
+SECONDARY
+TERTIARY
+DISABLED
+PRIMARY
+ERROR
+SUCCESS
+
+LumoStyles
+FontFamily
+MONOSPACE
+
+LumoStyles
+FontWeight
+MEDIUM
+
+LumoStyles
+Header
+H1
+H2
+H3
+H4
+H5
+H6
+
+==== Colors
+Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.1/demo/colors.html
+
+LumoStyles
+DARK
+THEME
+
+LumoStyles
+Color
+BASE_COLOR
+CONTRAST_5
+CONTRAST_10
+CONTRAST_20
+CONTRAST_30
+CONTRAST_40
+CONTRAST_50
+CONTRAST_60
+CONTRAST_70
+CONTRAST_80
+CONTRAST_90
+
+TextColor
+HEADER
+BODY
+SECONDARY
+TERTIARY
+DISABLED
+PRIMARY
+ERROR
+SUCCESS
+
+==== Style
+Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.1/demo/styles.html
+
+LumoStyles
+BorderRadius
+S
+M
+L
+_50
+
+LumoStyles
+Shadow
+S
+M
+L
+XL
+
+BoxShadowBorders
+TOP
+BOTTOM
+LEFT
+RIGHT
+
+==== Sizing and Spacing
+Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.1/demo/sizing-and-spacing.html
+
+LumoStyles
+Margin
+Uniform
+Top
+Bottom
+Left
+Right
+Tall
+Wide
+AUTO
+XS
+S
+M
+L
+XL
+
+LumoStyles
+Margin
+Responsive.Horizontal
+Responsive.Vertical
+
+LumoStyles
+Padding
+Uniform
+Top
+Bottom
+Left
+Right
+Tall
+Wide
+XS
+S
+M
+L
+XL
+
+LumoStyles
+Padding
+Responsive.Horizontal
+Responsive.Vertical
+
+LumoStyles
+Spacing
+Uniform
+Top
+Bottom
+Left
+Right
+Tall
+Wide
+XS
+S
+M
+L
+XL
+
+LumoStyles
+Size
+XS
+S
+M
+L
+XL
+
+=== Utility Classes
+RAT introduces number of utility classes to ease applying consistent styling and improve efficiency when initializing the most commonly needed UI elements.
+
+==== Example
+Label title = UIUtils.createH2Label("Title");
+This will output an <label> element that already has suitable stylename in place.
+Layouts
+(Jonte: the createFlexLayout, createFormLayout and createDiv are only used to add “inline” styles. Might be dumb to have this in the API.)
+createFormLayout
+Initalizes Vaadin Form layout
+createDiv
+Initializes an <div> element
+createRightAlignedDiv
+Initializes an <div> element, with text aligned to right. Mainly used in grids.
+createFlexLayout
+Initializes FlexLayout
+createWrappingFlexLayout
+Initializes FlexLayout, with wrapping
+createColumn
+Initializes FlexLayout with FlexDirection set to column
+
+Buttons
+Most commonly used button variations can be produced with utility classes. All button variations may include text label and/or icon.
+
+Types
+createButton
+createPrimaryButton
+createTertiaryButton
+Colors
+createSuccessButton / createSuccessPrimaryButton
+createErrorButton / createErrorPrimaryButton
+createContrastButton / createContrastPrimaryButton
+Size
+createSmallButton
+createLargeButton
+
+If other variations or combinations are needed they can be produced by appending the styles with addThemeVariants() method.
+
+Example
+Button save = UIUtils.createPrimaryButton("Save");
+save.addThemeVariants(ButtonVariant.LUMO_SMALL);
+
+Textfields
+Labels
+Size variations
+createXXSmallLabel
+createXSmallLabel
+createSmallLabel
+createLabel
+createLargeLabel
+createXLargeLabel
+createXXLargeLabel
+createXXXLargeLabel
+Headings
+createH2Label
+createH3Label
+createH4Label
+createH5Label
+createH6Label
+
+Misc
+createInitials
+Creates circular element with centered initials
+createAmountLabel
+Initializes an H5-label with monospace font for improved legibility of numeric value
+createFloatingActionButton
+Initializes an action button that appears in bottom right corner of the view. Most commonly used to trigger main action on view.
+
+Form layout
+setFormLayoutColSpan
+Define the column span for element in FormLayout
+createPhoneLayout
+Creates input fields for area code and phone number. Use within FormLayout.
+
+Numbers
+formatAmount
+
+
+formatUnits
+
+
+
+Badges
+Badges are small text elements with highlighted background-color.
+See badges in Lumo Documentation: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.1/demo/badges.html
+
+Variations
+createBadge
+createSuccessBadge
+createContrastBadge
+createErrorBadge
+
+Icons
+Variations
+createPrimaryIcon
+createSecondaryIcon
+createTertiaryIcon
+createDisabledIcon
+createSuccessIcon
+createErrorIcon
+createSmallIcon
+createLargeIcon
+Custom combination
+createIcon(size, color, icon);
+
+Dates
+formatDate
+
+
+
+Charts
+createProgressChart
+Renders an percentage value as radial progress chart
+createSalesChart
+Renders an line chart with 12 months on x-axis
+
+Details drawer
+createDetailsDrawerHeader
+Defines specific styling for header of drawer. Use only within DetailsDrawer.
+
+Notifications
+showNotification
+Show text notification on the bottom of the viewport for 3 seconds.
+
+CSS Properties
+In addition the most commonly used CSS properties are also
+
+=== Custom Utility Classes
+It is advised to create or modify the utility classes according to your needs. Create custom components and utility methods for reoccurring UI patterns. Doing this will make the code easier to maintain and more consistent.
+
+For example UIUtils.createViewTitle() can be added to create a consistent appearance for titles.
+public static Label createViewTitle(String text) {
+  Label title = new Label(text);
+  title.addClassName(FontSize.XL.getStyle());
+  title.addClassName(TextColor.HEADER.getStyle());
+  title.addClassName(LumoStyles.Margin.Vertical.S);
+  return title;
+}
