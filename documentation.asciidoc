@@ -46,6 +46,7 @@ All of the Business App Starter's views extend either `ViewFrame` or `SplitViewF
 
 * A view's *header slot* can be used for titles & identifiers, view specific actions, secondary navigation etc.
 * The main content of a view should be placed in the *content slot*. This slot should take up the most screen estate, while the other slots contain supportive elements.
+* Place detailed information in the *details slot*. (`SplitViewFrame` only.)
 * The *footer slot* can be used for view actions, summary data, selection info etc.
 
 `ViewFrame` and `SplitViewFrame` can be customised or extended to house more slots.
