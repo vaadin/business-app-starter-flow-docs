@@ -19,7 +19,7 @@ The navigation slot is reserved for the `NaviDrawer`. This component comes with 
 * Hidden by default on viewports narrower than 1024px. Accessible via the application header's menu icon.
 * Searchable and hierarchical navigation items.
 
-It consists of:
+The `NaviDrawer` consists of:
 
 * A header intended for branding and/or account switching purposes.
 * Scrollable list of navigation items.
