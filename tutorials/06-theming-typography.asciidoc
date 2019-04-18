@@ -1,3 +1,9 @@
+---
+title: Theming: Typography
+order: 6
+layout: page
+---
+
 = Theming: Typography
 
 == Headings

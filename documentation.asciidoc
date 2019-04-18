@@ -1,3 +1,9 @@
+---
+title: Application Structure
+order: 1
+layout: page
+---
+
 == Layout structure
 The application structure consists of several slots that are designed to help with implementing any desired layout.
 

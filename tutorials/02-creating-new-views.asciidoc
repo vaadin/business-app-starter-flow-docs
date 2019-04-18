@@ -1,3 +1,9 @@
+---
+title: Creating New Views
+order: 2
+layout: page
+---
+
 = Creating New Views
 
 The bare minimum needed when creating a new view is to define the `Route`, and to extend `Component` directly (*example 1*) or indirectly (*example 2*).
