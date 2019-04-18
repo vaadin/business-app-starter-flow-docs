@@ -4,13 +4,13 @@ order: 1
 layout: page
 ---
 
-== Layout structure
+== Application Structure
 The application structure consists of several slots that are designed to help with implementing any desired layout.
 
 image::images/structure.png[]
 
 === Headers and Footers
-These slots are intended to be used for application wide elements such as global navigation/actions or branding. Combination of either outer or inner header slot and side navigation greatly affects the structure of the application.
+These slots are intended to be used for application wide elements such as global navigation, actions or branding. Combination of either outer or inner header slot and side navigation greatly affects the structure of the application.
 
 In case both inner and outer elements are used, ensure that there is a clear hierarchy in content and the areas do not demand too much vertical space.
 
