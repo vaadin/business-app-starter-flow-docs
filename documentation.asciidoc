@@ -5,25 +5,25 @@ layout: page
 ---
 
 == Application Structure
-The application structure consists of several slots that are designed to help with implementing any desired layout.
+The structure consists of several slots designed to help implement any desired layout.
 
 image::images/structure.png[]
 
 === Headers and Footers
-These slots are intended to be used for application wide elements such as global navigation, actions or branding. Combination of either outer or inner header slot and side navigation greatly affects the structure of the application.
-
-In case both inner and outer elements are used, ensure that there is a clear hierarchy in content and the areas do not demand too much vertical space.
+These slots are intended for application wide elements such as main navigation, actions and branding. When using both the outer and inner elements, make sure the content hierarchy is clear, and that they don't take up too much vertical space.
 
 === Navigation
-Navigation slot is reserved only for sidebar navigation. The slot introduces few neat features built-in. It can be collapsed and the view slot will automatically adapt to increased space. There’s also two different modes that configure the behaviour of navigation.
+The navigation slot is reserved for the `NaviDrawer`. This component comes with a few neat features built-in:
 
-The slot itself consists of three parts.
+* It can be collapsed to maximise the screen space for the inner header, view and inner footer slots.
+* Hidden by default on viewports narrower than 1024px. Accessible via the application header's menu icon.
+* Searchable and hierarchical navigation items.
 
-* The scrolling *navi-content* area which is intended location for navigation links.
-* On top of *navi-content* there is *navi-header* which is the most prominent part of the UI. *Navi-header* can be used for branding or elements that have to be available throughout the application.
-* *Navi-footer* is the part below *navi-content* and it’s fixed to bottom of navigation.
+It consists of:
 
-Be cautious when using both *navi-header* and *navi-footer* parts that there is reasonable amount of vertical space left for *navi-content*. *Navi-header* and *navi-footer* will always take all the space that they require and *navi-content* will get the rest.
+* A header intended for branding and/or account switching purposes.
+* Scrollable list of navigation items.
+* A footer that by default houses the collapse button.
 
 === Views
 Any view specific and dynamic parts of the UI should be placed in in view slot. This is the part that changes when navigation events occur.
