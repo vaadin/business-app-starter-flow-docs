@@ -42,9 +42,7 @@ public class Statistics extends ViewFrame {
 ----
 
 ==== ViewFrame & SplitViewFrame
-All of the Business App Starter's views extend either `ViewFrame` or `SplitViewFrame`. These classes simplify the process of creating views with a header, scrollable content and footer. The only difference between these two classes is that `SplitViewFrame` houses an additional *details* slot, used when creating master-details view.
-
-All slots in `ViewFrame` and `SplitViewFrame` are optional.
+All of the Business App Starter's views extend either `ViewFrame` or `SplitViewFrame`. These classes simplify the process of creating views with a header, scrollable content and footer. The only difference between them is that `SplitViewFrame` houses an additional *details* slot. This slot comes in handy when creating master-detail views. All slots in `ViewFrame` and `SplitViewFrame` are optional.
 
 * A view's *header slot* can be used for titles & identifiers, view specific actions, secondary navigation etc.
 * The main content of a view should be placed in the *content slot*. This slot should take up the most screen estate, while the other slots contain supportive elements.
