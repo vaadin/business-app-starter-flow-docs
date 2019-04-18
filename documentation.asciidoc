@@ -219,10 +219,10 @@ Label title = UIUtils.createH2Label("Title");
 This will output an `<label>` element that already has suitable style name in place.
 
 ==== Buttons
-Most commonly used button variations can be produced with `UIUtils`. All variations may include text and/or an icon.
+Most commonly used button variations can be produced with `UIUtils`. The methods accept `String` and/or `VaadinIcon`.
 
 |===
-|Type|Method
+|Variant|Method
 
 |Primary
 |`createPrimaryButton`
@@ -243,110 +243,115 @@ Most commonly used button variations can be produced with `UIUtils`. All variati
 |`createSmallButton`, `createLargeButton`
 |===
 
-If other variations or combinations are needed use:
-
-* `createButton(String text, ButtonVariant... variants)`
-* `createButton(VaadinIcon icon, ButtonVariant... variants)`
-* `createButton(String text, VaadinIcon icon, ButtonVariant... variants)`
+If other variations or combinations are needed use `createButton(ButtonVariant...)`.
 
 [source,java]
 ----
-Button successPrimary = UIUtils.createSuccessPrimaryButton("Success Primary");
+// Primary button, text only.
+UIUtils.createPrimaryButton("Primary");
 
-Button tertiarySmall = UIUtils.createButton("Tertiary Small", VaadinIcon.HOME, ButtonVariant.LUMO_TERTIARY, ButtonVariant.LUMO_SMALL);
+// Success button, icon only.
+UIUtils.createSuccessButton(VaadinIcon.CHECK);
+
+// Error button, text and icon.
+UIUtils.createErrorButton("Error", VaadinIcon.WARNING);
+
+// Small tertiary button, text and icon.
+UIUtils.createButton("Tertiary Small", VaadinIcon.HOME, ButtonVariant.LUMO_TERTIARY, ButtonVariant.LUMO_SMALL);
 ----
+
+==== Labels
 
 |===
 |Type|Method
 
 |Size & color
-|`createLabel(FontSize size, TextColor color, String text)`
+|`createLabel(FontSize, TextColor, String)`
 
 |Size
-|`createLabel(FontSize size, String text)`
+|`createLabel(FontSize, String)`
 
 |Colors
-|`createLabel(TextColor color, String text)`
+|`createLabel(TextColor, String)`
 
 |Headings
-|`createH2Label(String text)`, `createH3Label(String text)`, `createH4Label(String text)`, `createH5Label(String text)`, `createH6Label(String text)`
+|`createH1Label(String)`, `createH2Label(String)`, `createH3Label(String)`, `createH4Label(String)`, `createH5Label(String)`, `createH6Label(String)`
 |===
 
-Misc
-createInitials
-Creates circular element with centered initials
-createAmountLabel
-Initializes an H5-label with monospace font for improved legibility of numeric value
-createFloatingActionButton
-Initializes an action button that appears in bottom right corner of the view. Most commonly used to trigger main action on view.
+==== Misc
+|===
+|Method|Description
 
-Form layout
-setFormLayoutColSpan
-Define the column span for element in FormLayout
-createPhoneLayout
-Creates input fields for area code and phone number. Use within FormLayout.
+|`createInitials`
+|Creates circular element with centered initials.
 
-Numbers
-formatAmount
+|`createFloatingActionButton`
+|Initialises an action button that appears in bottom right corner of the view. Most commonly used to trigger main action on view.
+|===
 
+==== Form Layout
+|===
+|Method|Description
 
-formatUnits
+|`setFormLayoutColSpan`
+|Defines the column span elements in a FormLayout.
+|===
 
+==== Numbers
+|===
+|Method|Description
 
+|`formatAmount`
+|Formats a decimal amount for improved legibility.
 
-Badges
-Badges are small text elements with highlighted background-color.
-See badges in Lumo Documentation: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.1/demo/badges.html
+|`createAmountLabel`
+|Initialises a monospaced H5 label for improved legibility of decimal values.
 
-Variations
-createBadge
-createSuccessBadge
-createContrastBadge
-createErrorBadge
+|`formatUnits`
+|Formats an integer amount for improved legibility.
 
-Icons
-Variations
-createPrimaryIcon
-createSecondaryIcon
-createTertiaryIcon
-createDisabledIcon
-createSuccessIcon
-createErrorIcon
-createSmallIcon
-createLargeIcon
-Custom combination
-createIcon(size, color, icon);
+|`createUnitsLabel`
+|Initialises a monospaced H5 label for improved legibility of integer values.
+|===
 
-Dates
-formatDate
+==== Icons
+|===
+|Variant|Method
 
+|Primary
+|`createPrimaryIcon`
 
+|Secondary
+|`createSecondaryIcon`
 
-Charts
-createProgressChart
-Renders an percentage value as radial progress chart
-createSalesChart
-Renders an line chart with 12 months on x-axis
+|Tertiary
+|`createTertiaryIcon`
 
-Details drawer
-createDetailsDrawerHeader
-Defines specific styling for header of drawer. Use only within DetailsDrawer.
+|Disabled
+|`createDisabledIcon`
 
-Notifications
-showNotification
-Show text notification on the bottom of the viewport for 3 seconds.
+|Success
+|`createSuccessIcon`
 
-CSS Properties
-In addition the most commonly used CSS properties are also
+|Error
+|`createErrorIcon`
 
-=== Custom Utility Classes
+|Small
+|`createSmallIcon`
+
+|Large
+|`createLargeIcon`
+|===
+
+If other variations or combinations are needed use `createIcon(IconSize, TextColor, VaadinIcon)`.
+
+==== Dates
+|===
+|Method|Description
+
+|`formatDate`
+|Formats a `LocalDate` according to the format defined in `UIUtils`.
+|===
+
+=== Customise the Utility Classes
 It is advised to create or modify the utility classes according to your needs. Create custom components and utility methods for reoccurring UI patterns. Doing this will make the code easier to maintain and more consistent.
-
-For example UIUtils.createViewTitle() can be added to create a consistent appearance for titles.
-public static Label createViewTitle(String text) {
-  Label title = new Label(text);
-  title.addClassName(FontSize.XL.getStyle());
-  title.addClassName(TextColor.HEADER.getStyle());
-  title.addClassName(LumoStyles.Margin.Vertical.S);
-  return title;
-}
