@@ -50,7 +50,7 @@ All of the slots in `ViewFrame` and `SplitViewFrame` are optional.
 * The main content of a view should be placed in the *content slot*. This slot should take up the most screen estate, while the other slots contain supportive elements.
 * The *footer slot* can be used for view actions, summary data, selection info etc.
 
-`ViewFrame` and `SplitViewFrame` can be extended to introduce more sections and/or parts.
+`ViewFrame` and `SplitViewFrame` can be customised or extended to house more slots.
 
 === Layout Examples
 Here’s a few examples of common layouts used in business applications.
