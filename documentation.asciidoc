@@ -9,10 +9,10 @@ The structure consists of several slots designed to help implement any desired l
 
 image::images/structure.png[]
 
-=== Headers and Footers
+=== Header and Footer Slots
 These slots are intended for application wide elements such as main navigation, actions and branding. When using both the outer and inner elements, make sure the content hierarchy is clear, and that they don't take up too much vertical space.
 
-=== Navigation
+=== Navigation Slot
 The navigation slot is reserved for the `NaviDrawer`. This component comes with a few neat features built-in:
 
 * It can be collapsed to maximise the screen space for the inner header, view and inner footer slots.
@@ -25,16 +25,29 @@ It consists of:
 * Scrollable list of navigation items.
 * A footer that by default houses the collapse button.
 
-=== Views
-Any view specific and dynamic parts of the UI should be placed in in view slot. This is the part that changes when navigation events occur.
+NOTE: Please remember that all custom components that ship with the Business App Starter can and should be customised to suit your business needs and requirements.
 
-Creating a new view by extending the *ViewFrame* will give three predefined parts.
+The application supports two different navigation modes: default and tabbed.
 
-* *View-header* can be used for view name/identifiers, view specific actions or secondary navigation for example.
-* The actual content is displayed in *view-content*. This area should be taking most of the screen estate as it has the main content and other areas should contain only supportive elements.
-* *View-footer* can be used for view actions, summary data or info about selections.
+The default is the more traditional approach where each link change the currently active view. In tabbed navigation mode an additional bar is added to UI and each navigation event changes the active tab. It enables a browser-like functionality by having multiple views open simultaneously.
 
-More parts can be introduced by extending the default structure.
+=== View Slot
+Top-level views should be placed in the view slot. This is accomplished by setting your view's `@Route` `layout` parameter to `MainLayout.class`:
+
+[source,java]
+----
+@Route(value = "statistics", layout = MainLayout.class)
+@PageTitle("Statistics")
+public class Statistics extends ViewFrame {
+----
+
+All of the Business App Starter's views extend either `ViewFrame` or `SplitViewFrame`. `ViewFrame` simplifies the process of implementing views consisting of a header, scrollable content and footer. `SplitViewFrame` does the same with an addition of a details section used when creating master-details view. All slots are optional.
+
+* A view's *header slot* can be used for titles & identifiers, view specific actions, secondary navigation etc.
+* The main content of a view should be placed in the *content slot*. This slot should take up the most screen estate, while the other slots contain supportive elements.
+* The *footer slot* can be used for view actions, summary data, selection info etc.
+
+`ViewFrame` and `SplitViewFrame` can be extended to introduce more sections and/or parts.
 
 === Layout Examples
 Here’s a few examples of common layouts used in business applications.
@@ -77,21 +90,8 @@ Used slots:
 === Closable Tabs
 An additional feature to `Tabs` that allows discarding tabs. Used in tabbed navigation mode.
 
-=== App Bars
-
-=== Navigation Drawer
-Navigation drawer is a custom-made sidebar element that has some commonly needed functionalities built-in. Configurable slots provide freedom in definition of navigation. Navigation sidebar has header and footer slots to display any desired content in relation with navigation links.
-
-Responsiveness and collapsed mode are built-in navigation. By default navigation is collapsed when viewport width is less than 1024px. Navigation sidebar can also be collapsed manually on all viewport sizes to increase the amount of space available for view content.
-
-The application supports two different navigation modes. Links mode is the most traditional way of navigation where each link change the currently active view. In tabbed navigation mode an additional bar is added to UI and each navigation event changes the active tab. It enables a browser-like functionality by having multiple views open simultaneously.
-
 === List Item
 List item is used to display an entity in formatted manner. Most common use is to display an icon together with a caption and value. There are few built-in options to alter the appearance.
-
-=== Details Drawer
-
-=== Divider
 
 === FlexBoxLayout
 `FlexBoxLayout` is a server-side implementation of link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout[CSS Flexible Box Layout]. It extends `FlexLayout` and contains convenience methods for setting `background-color`, `flex`, `flex-basis`, `flex-direction`, `flex-shrink`, `flex-wrap`, `margin`, `overflow`, `padding`, `shadow`, `spacing` and `theme`.
