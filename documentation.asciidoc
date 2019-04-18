@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: Application Structure
 order: 1
 layout: page
 ---
