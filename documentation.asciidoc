@@ -28,8 +28,8 @@ It consists of:
 ==== Navigation Modes
 The application supports two different navigation modes:
 
-* Traditional: clicking a link changes the current view.
-* Tabbed: users can open and close tabs. Clicking a link changes the content of the current tab.
+* *Traditional*: clicking a link changes the current view.
+* *Tabbed*: users can open and close tabs. Clicking a link changes the content of the current tab.
 
 === View Slot
 Top-level views should be placed in the view slot. This is accomplished by setting your view's `@Route` `layout` parameter to `MainLayout.class`:
