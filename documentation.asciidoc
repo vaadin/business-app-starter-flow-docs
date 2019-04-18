@@ -42,7 +42,7 @@ public class Statistics extends ViewFrame {
 ----
 
 ==== ViewFrame & SplitViewFrame
-All of the Business App Starter's views extend either `ViewFrame` or `SplitViewFrame`. `ViewFrame` simplifies the process of implementing views consisting of a header, scrollable content and footer. `SplitViewFrame` does the same with an additional details slot, useful when creating master-details view.
+All of the Business App Starter's views extend either `ViewFrame` or `SplitViewFrame`. These classes simplify the process of creating views with a header, scrollable content and footer. `SplitViewFrame` does the same with an additional details slot, useful when creating master-details view.
 
 All of the slots in `ViewFrame` and `SplitViewFrame` are optional.
 
