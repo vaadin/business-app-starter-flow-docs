@@ -14,8 +14,8 @@ Navigation slot is reserved only for sidebar navigation. The slot introduces few
 The slot itself consists of three parts.
 
 * The scrolling *navi-content* area which is intended location for navigation links.
-* On top of *navi-content* there is *navi-header* which is the most prominent part of the UI. Navi-header can be used for branding or elements that have to be available throughout the application.
-* Navi-footer is the part below *navi-content* and it’s fixed to bottom of navigation.
+* On top of *navi-content* there is *navi-header* which is the most prominent part of the UI. *Navi-header* can be used for branding or elements that have to be available throughout the application.
+* *Navi-footer* is the part below *navi-content* and it’s fixed to bottom of navigation.
 
 Be cautious when using both *navi-header* and *navi-footer* parts that there is reasonable amount of vertical space left for *navi-content*. *Navi-header* and *navi-footer* will always take all the space that they require and *navi-content* will get the rest.
 
@@ -37,7 +37,7 @@ image::images/layout-01.png[]
 
 Very common layout where header area on top is the most prominent element. View area uses header to show the view title.
 
-Used slots
+Used slots:
 
 * Header (outer)
 * Navigation drawer
@@ -49,7 +49,7 @@ image::images/layout-02.png[]
 
 This layout puts more focus on the sidebar navigation. Suitable for complex hierarchical navigation structures. View area has footer that includes action buttons.
 
-Used slots
+Used slots:
 
 * Header (inner)
 * Navigation drawer
@@ -61,7 +61,7 @@ image::images/layout-03.png[]
 
 The navigation is placed in header. View area is maximised but navigation has to be rather simple. View sidebar is used to display additional details.
 
-Used slots
+Used slots:
 
 * Header (outer)
 * View with sidebar
@@ -69,7 +69,7 @@ Used slots
 == Custom Components
 
 === Closable Tabs
-An additional feature to Vaadin Tabs that allows discarding tabs. Used in Tabs navigation mode.
+An additional feature to `Tabs` that allows discarding tabs. Used in tabbed navigation mode.
 
 === App Bars
 
@@ -78,7 +78,7 @@ Navigation drawer is a custom-made sidebar element that has some commonly needed
 
 Responsiveness and collapsed mode are built-in navigation. By default navigation is collapsed when viewport width is less than 1024px. Navigation sidebar can also be collapsed manually on all viewport sizes to increase the amount of space available for view content.
 
-The application supports two different navigation modes. Links mode is the most traditional way of navigation where each link change the currently active view. In Tabs mode additional tab bar is added to UI and each navigation event changes the active tab. Tabs mode allows browser-like functionality by having multiple views open simultaneously.
+The application supports two different navigation modes. Links mode is the most traditional way of navigation where each link change the currently active view. In tabbed navigation mode an additional bar is added to UI and each navigation event changes the active tab. It enables a browser-like functionality by having multiple views open simultaneously.
 
 === List Item
 List item is used to display an entity in formatted manner. Most common use is to display an icon together with a caption and value. There are few built-in options to alter the appearance.
@@ -88,23 +88,22 @@ List item is used to display an entity in formatted manner. Most common use is t
 === Divider
 
 === FlexBoxLayout
-FlexBoxLayout is a server-side implementation of link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout[CSS Flexible Box Layout]. It extends FlexLayout and contains convenience methods for setting `background-color`, `flex`, `flex-basis`, `flex-direction`, `flex-shrink`, `flex-wrap`, `margin`, `overflow`, `padding`, `shadow`, `spacing` and `theme`.
+`FlexBoxLayout` is a server-side implementation of link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout[CSS Flexible Box Layout]. It extends `FlexLayout` and contains convenience methods for setting `background-color`, `flex`, `flex-basis`, `flex-direction`, `flex-shrink`, `flex-wrap`, `margin`, `overflow`, `padding`, `shadow`, `spacing` and `theme`.
 
 == Theming
-Responsive App Template uses the Lumo theme which is the main theme for all Vaadin web components. Lumo uses CSS Variables to control color values, margin sizes and typography for example. Almost any visual style can be achieved just by tweaking the predefined CSS Variables. For the more advanced modifications Vaadin introduces ThemableMixin which allows separately theming the ShadowDOM parts of each component.
+Responsive App Template uses the Lumo theme which is the main theme for all Vaadin web components. Lumo uses CSS Variables to control color values, margin sizes and typography for example. Almost any visual style can be achieved just by tweaking the predefined CSS Variables. For the more advanced modifications Vaadin introduces `ThemableMixin` which allows separately theming the Shadow DOM parts of each component.
 
 [%hardbreaks]
 Full Lumo documentation:
 https://vaadin.com/themes/lumo
 
 [%hardbreaks]
-ThemableMixin documentation:
+`ThemableMixin` documentation:
 https://github.com/vaadin/vaadin-themable-mixin/wiki
 
 === Theme properties
-Lumo defines a set of CSS custom properties you can use to apply consistent visual styles across your application. To help applying the CSS properties from server-side Java, RAT introduces theme properties.
+Lumo defines a set of CSS custom properties you can use to apply consistent visual styles across your application. The Responsive App Template enables you to apply these on the server-side. For example, to apply a medium size bottom margin:
 
-For example to apply a medium size bottom margin:
 [source,java]
 ----
 component.addClassName(LumoStyles.Margin.Bottom.M);
@@ -115,75 +114,75 @@ component.addClassName(LumoStyles.Margin.Bottom.M);
 Lumo styles:
 https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
 
-===== FontFamily
-`MONOSPACE`
+|===
+|Property|Values
 
-<example>
+|`FontFamily`
+|`MONOSPACE`
 
-===== FontSize
-`XXS`, `XS`, `S`, `M`, `L`, `XL`, `XXL`, `XXXL`
+|`FontSize`
+|`XXS`, `XS`, `S`, `M` (default), `L`, `XL`, `XXL`, `XXXL`
 
-<example>
+|`FontWeight`
+|`BOLD`, `BOLDER`, `LIGHTER`, `NORMAL`, `_100`, `_200`, `_300`, `_400`, `_500`, `_600`, `_700`, `_800`, `_900`
 
-===== FontWeight
-`BOLD`, `BOLDER`, `LIGHTER`, `NORMAL`, `_100`, `_200`, `_300`, `_400`, `_500`, `_600`, `_700`, `_800`, `_900`
+|`Header`
+|`H1`, `H2`, `H3`, `H4`, `H5`, `H6`
 
-<example>
+|`IconSize`
+|`S`, `M`, `L`
 
-===== IconSize
-`S`, `M`, `L`
-
-<example>
-
-===== TextColor
-`HEADER`, `BODY`, `SECONDARY`, `TERTIARY`, `DISABLED`, `PRIMARY`, `PRIMARY_CONTRAST`, `ERROR`, `ERROR_CONTRAST`, `SUCCESS`, `SUCCESS_CONTRAST`
-
-<example>
-
-===== Header
-`H1`, `H2`, `H3`, `H4`, `H5`, `H6`
+|`TextColor`
+|`HEADER`, `BODY`, `SECONDARY`, `TERTIARY`, `DISABLED`, `PRIMARY`, `PRIMARY_CONTRAST`, `ERROR`, `ERROR_CONTRAST`, `SUCCESS`, `SUCCESS_CONTRAST`
+|===
 
 <example>
 
 ==== Colors
 Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/colors.html
 
-===== Base
-`BASE_COLOR`
+|===
+|Color|Values
 
-===== Primary
-`_10`, `_50`, `_100`
+|`Base`
+|`BASE_COLOR`
 
-===== Error
-`_10`, `_50`, `_100`
+|`Primary`
+|`_10`, `_50`, `_100`
 
-===== Success
-`_10`, `_50`, `_100`
+|`Error`
+|`_10`, `_50`, `_100`
 
-===== Tint
-`_5`, `_10`, `_20`, `_30`, `_40`, `_50`, `_60`, `_70`, `_80`, `_90`, `_100`
+|`Success`
+|`_10`, `_50`, `_100`
 
-===== Shade
-`_5`, `_10`, `_20`, `_30`, `_40`, `_50`, `_60`, `_70`, `_80`, `_90`, `_100`
+|`Tint`
+|`_5`, `_10`, `_20`, `_30`, `_40`, `_50`, `_60`, `_70`, `_80`, `_90`, `_100`
 
-===== Contrast
-`_5`, `_10`, `_20`, `_30`, `_40`, `_50`, `_60`, `_70`, `_80`, `_90`, `_100`
+|`Shade`
+|`_5`, `_10`, `_20`, `_30`, `_40`, `_50`, `_60`, `_70`, `_80`, `_90`, `_100`
+
+|`Contrast`
+|`_5`, `_10`, `_20`, `_30`, `_40`, `_50`, `_60`, `_70`, `_80`, `_90`, `_100`
+|===
 
 <example>
 
 ==== Style
 Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/styles.html
 
-===== BorderRadius
-`S`, `M`, `L`, `_50`
+|===
+|Color|Values
 
-<example>
+|`BorderRadius`
+|`S`, `M`, `L`, `_50`
 
-===== BoxShadowBorders
-`BOTTOM`, `LEFT`, `RIGHT`, `TOP`
+|`BoxShadowBorders`
+|`BOTTOM`, `LEFT`, `RIGHT`, `TOP`
 
-===== Shadow
-`S`, `M`, `L`, `XL`
+|`Shadow`
+|`S`, `M`, `L`, `XL`
+|===
 
 <example>
 
@@ -191,58 +190,87 @@ Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/styles.html
 Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/sizing-and-spacing.html
 
 |===
-|Property |Size |Direction
+|Property|Size|Direction
 
-|`Margin`, `Padding`, `Spacing`
+|`Margin`
+|`XS`, `S`, `M` (default), `L`, `XL`
+|`BOTTOM`, `LEFT`, `RIGHT`, `TOP`, `HORIZONTAL`, `VERTICAL`, `TALL`, `UNIFORM` (default), `WIDE`
+
+|`Padding`
+|`XS`, `S`, `M` (default), `L`, `XL`
+|`BOTTOM`, `LEFT`, `RIGHT`, `TOP`, `HORIZONTAL`, `VERTICAL`, `TALL`, `UNIFORM` (default), `WIDE`
+
+|`Spacing`
 |`XS`, `S`, `M` (default), `L`, `XL`
 |`BOTTOM`, `LEFT`, `RIGHT`, `TOP`, `HORIZONTAL`, `VERTICAL`, `TALL`, `UNIFORM` (default), `WIDE`
 |===
+
+<example>
 
 === Utility Classes
 RAT introduces number of utility classes to ease applying consistent styling and improve efficiency when initialising the most commonly needed UI elements.
 
 ==== Example
+[source,java]
+----
 Label title = UIUtils.createH2Label("Title");
-This will output an <label> element that already has suitable stylename in place.
+----
+
+This will output an `<label>` element that already has suitable style name in place.
 
 ==== Buttons
-Most commonly used button variations can be produced with utility classes. All button variations may include text label and/or icon.
+Most commonly used button variations can be produced with `UIUtils`. All variations may include text and/or an icon.
 
-Types
-createButton
-createPrimaryButton
-createTertiaryButton
-Colors
-createSuccessButton / createSuccessPrimaryButton
-createErrorButton / createErrorPrimaryButton
-createContrastButton / createContrastPrimaryButton
-Size
-createSmallButton
-createLargeButton
+|===
+|Type|Method
 
-If other variations or combinations are needed they can be produced by appending the styles with addThemeVariants() method.
+|Primary
+|`createPrimaryButton`
 
-Example
-Button save = UIUtils.createPrimaryButton("Save");
-save.addThemeVariants(ButtonVariant.LUMO_SMALL);
+|Tertiary
+|`createTertiaryButton`, `createTertiaryInlineButton`
 
-Textfields
-Labels
-Size variations
-createXXSmallLabel
-createXSmallLabel
-createSmallLabel
-createLabel
-createLargeLabel
-createXLargeLabel
-createXXLargeLabel
-createXXXLargeLabel
-Headings
-createH2Label
-createH3Label
-createH4Label
-createH5Label
-createH6Label
+|Success
+|`createSuccessButton`, `createSuccessPrimaryButton`
+
+|Error
+|`createErrorButton`, `createErrorPrimaryButton`
+
+|Contrast
+|`createContrastButton`, `createContrastPrimaryButton`
+
+|Size
+|`createSmallButton`, `createLargeButton`
+|===
+
+If other variations or combinations are needed use:
+
+* `createButton(String text, ButtonVariant... variants)`
+* `createButton(VaadinIcon icon, ButtonVariant... variants)`
+* `createButton(String text, VaadinIcon icon, ButtonVariant... variants)`
+
+[source,java]
+----
+Button successPrimary = UIUtils.createSuccessPrimaryButton("Success Primary");
+
+Button tertiarySmall = UIUtils.createButton("Tertiary Small", VaadinIcon.HOME, ButtonVariant.LUMO_TERTIARY, ButtonVariant.LUMO_SMALL);
+----
+
+|===
+|Type|Method
+
+|Size & color
+|`createLabel(FontSize size, TextColor color, String text)`
+
+|Size
+|`createLabel(FontSize size, String text)`
+
+|Colors
+|`createLabel(TextColor color, String text)`
+
+|Headings
+|`createH2Label(String text)`, `createH3Label(String text)`, `createH4Label(String text)`, `createH5Label(String text)`, `createH6Label(String text)`
+|===
 
 Misc
 createInitials

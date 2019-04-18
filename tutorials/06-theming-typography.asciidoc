@@ -32,7 +32,7 @@ component.addClassName(FontSize.XL.getClassName());
 ----
 
 == Text Color
-There are 11 text colors in Lumo: `HEADER`, `BODY`, `SECONDARY`, `TERTIARY`, `DISABLED`, `PRIMARY`, `PRIMARY_CONTRAST`, `ERROR`, `ERROR_CONTRAST`, `SUCCESS` and `SUCCESS_CONTRAST`.
+There are 11 text colors in Lumo: `HEADER`, `BODY` (default), `SECONDARY`, `TERTIARY`, `DISABLED`, `PRIMARY`, `PRIMARY_CONTRAST`, `ERROR`, `ERROR_CONTRAST`, `SUCCESS` and `SUCCESS_CONTRAST`.
 
 image::images/06/text-color.png[]
 
