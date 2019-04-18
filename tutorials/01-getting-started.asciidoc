@@ -1,3 +1,9 @@
+---
+title: Getting Started
+order: 1
+layout: page
+---
+
 = Getting Started
 
 The Responsive App Template includes a dummy database and a set of example views. All that’s needed to run the application is:

@@ -1,3 +1,9 @@
+---
+title: Simple ViewFrame Example
+order: 3
+layout: page
+---
+
 = Simple ViewFrame Example
 
 `ViewFrame` simplifies the process of creating views with a header, scrollable content and footer. Please note that `ViewFrame` does not set any margin, padding or spacing by default. It simply provides the structure.
