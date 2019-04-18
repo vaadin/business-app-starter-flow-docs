@@ -6,7 +6,7 @@ layout: page
 
 = Application Headers & Footers
 
-As stated in the link:https://vaadin.com[documentation] the Responsive App Template is structured as follows:
+As stated in the link:https://vaadin.com[documentation] the Business App Starter is structured as follows:
 
 image::images/04/structure.png[]
 

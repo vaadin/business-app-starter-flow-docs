@@ -64,7 +64,7 @@ public class MyView extends ViewFrame {
 
 image::images/03/example.png[]
 
-If we wanted to distinguish the slots from one another, we could utilise some of the styles that the Responsive App Template provides, e.g. *borders* and *shadows*.
+If we wanted to distinguish the slots from one another, we could utilise some of the styles that the Business App Starter provides, e.g. *borders* and *shadows*.
 
 == Borders
 To apply borders to any `Component` call `addClassName(BoxShadowBorders.<DIRECTION>)`. Adding a bottom and top border on the header and footer respectively:
@@ -102,4 +102,4 @@ UIUtils.setBackgroundColor(LumoStyles.Color.BASE_COLOR, header, footer);
 
 image::images/03/example-background.png[]
 
-For more information on how to theme your application using the various Responsive App Template utilities please see link:https://vaadin.com[Styling & Theming].
+For more information on how to theme your application using the various Business App Starter utilities please see link:https://vaadin.com[Styling & Theming].

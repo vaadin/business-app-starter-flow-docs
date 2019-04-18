@@ -21,7 +21,7 @@ Lumo defines 8 different font sizes: `XXS`, `XS`, `S`, `M` (default), `L`, `XL`,
 
 image::images/06/font-size.png[]
 
-The Responsive App Template makes it easy to create labels of a specific size (*example 1*). You can also set the font size for other components using class names (*example 2*).
+The Business App Starter makes it easy to create labels of a specific size (*example 1*). You can also set the font size for other components using class names (*example 2*).
 
 === Example 1: Using UIUtils
 Creating a label with a specific font size.
