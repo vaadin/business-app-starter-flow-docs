@@ -102,7 +102,7 @@ List item is used to display an entity in formatted manner. Most common use is t
 NOTE: Please remember that all custom components that ship with the Business App Starter can and should be customised to suit your business needs and requirements.
 
 == Theming
-Business App Starter uses the Lumo theme which is the main theme for all Vaadin web components. Lumo uses CSS Variables to control color values, margin sizes and typography for example. Almost any visual style can be achieved just by tweaking the predefined CSS Variables. For the more advanced modifications Vaadin introduces `ThemableMixin` which allows separately theming the Shadow DOM parts of each component.
+The Business App Starter uses the Lumo theme which is the main theme for all Vaadin web components. Lumo uses CSS Variables to control color values, margin sizes and typography for example. Almost any visual style can be achieved just by tweaking the predefined CSS Variables. For the more advanced modifications Vaadin introduces `ThemableMixin` which allows separately theming the Shadow DOM parts of each component.
 
 [%hardbreaks]
 Full Lumo documentation:
