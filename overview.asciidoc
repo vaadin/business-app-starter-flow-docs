@@ -158,8 +158,6 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
 |`HEADER`, `BODY`, `SECONDARY`, `TERTIARY`, `DISABLED`, `PRIMARY`, `PRIMARY_CONTRAST`, `ERROR`, `ERROR_CONTRAST`, `SUCCESS`, `SUCCESS_CONTRAST`
 |===
 
-<example>
-
 ==== Colors
 Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/colors.html
 
@@ -188,8 +186,6 @@ Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/colors.html
 |`_5`, `_10`, `_20`, `_30`, `_40`, `_50`, `_60`, `_70`, `_80`, `_90`, `_100`
 |===
 
-<example>
-
 ==== Style
 Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/styles.html
 
@@ -205,8 +201,6 @@ Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/styles.html
 |`Shadow`
 |`S`, `M`, `L`, `XL`
 |===
-
-<example>
 
 ==== Sizing and Spacing
 Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/sizing-and-spacing.html
@@ -226,8 +220,6 @@ Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/sizing-and-spa
 |`XS`, `S`, `M` (default), `L`, `XL`
 |`BOTTOM`, `LEFT`, `RIGHT`, `TOP`, `HORIZONTAL`, `VERTICAL`, `TALL`, `UNIFORM` (default), `WIDE`
 |===
-
-<example>
 
 === Utility Classes
 RAT introduces number of utility classes to ease applying consistent styling and improve efficiency when initialising the most commonly needed UI elements.
