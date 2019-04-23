@@ -161,7 +161,7 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
 
 |`TextColor`
 |`HEADER`, `BODY`, `SECONDARY`, `TERTIARY`, `DISABLED`, `PRIMARY`, `PRIMARY_CONTRAST`, `ERROR`, `ERROR_CONTRAST`, `SUCCESS`, `SUCCESS_CONTRAST`
-|`UIUtils.createLabel(TextColor.SUCCESS, "Success");` or `component.addClassName(TextColor.SECONDARY.getClassName());`
+|`UIUtils.createLabel(TextColor.SUCCESS, "Success");` or `component.addClassName(TextColor.SUCCESS.getClassName());`
 |===
 
 ==== Colors
