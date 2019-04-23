@@ -4,13 +4,16 @@ order: 1
 layout: page
 ---
 
-== Application Structure
-The structure consists of several slots designed to help implement any desired layout.
+= Business App Starter
+A starter for building responsive business web apps. It consists of a collection of components, view templates, theming utilities and best practises that can help teams save more than a week of development time at the start of a new project.
+
+== Structure
+The Business App Starter's structure is comprised of several slots designed to help implement any layout.
 
 image::images/structure.png[]
 
 === Header and Footer Slots
-These slots are intended for application wide elements such as main navigation, actions and branding. When using both the outer and inner elements, make sure the content hierarchy is clear, and that they don't take up too much vertical space.
+These slots are intended for application-wide navigation, actions and branding. When using both the outer and inner elements, ensure the content hierarchy is clear and that they don't take up too much vertical space.
 
 === Navigation Slot
 The navigation slot is reserved for the `NaviDrawer`. This component comes with a few neat features built-in:
