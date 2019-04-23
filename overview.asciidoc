@@ -100,6 +100,7 @@ The Business App Starter comes with the following custom components:
 An application header element that consists of a set of optional components: main menu icon, contextual navigation icon, title, tabs, action items and avatar.
 
 An AppBar with a main menu icon, title, tabs and avatar:
+
 image::images/app-bar.png[]
 
 === FlexBoxLayout
