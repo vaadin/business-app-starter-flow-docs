@@ -8,6 +8,8 @@ layout: page
 
 A starter for building responsive business web apps. It contains a collection of components, view templates, theming utilities and best practises that can help teams save more than a week of development time at the start of a new project.
 
+image::images/overview-1.png[]
+
 == Features
 * Application header with avatar & tab support
 * Customisable styles
