@@ -99,7 +99,7 @@ The Business App Starter comes with the following custom components:
 === AppBar
 An application header element that consists of a set of optional components: main menu icon, contextual navigation icon, title, tabs, action items and avatar.
 
-image::images/app-bar.png[]
+image::images/app-bar.png[AppBar with a main menu icon, title, tabs and avatar]
 
 === FlexBoxLayout
 `FlexBoxLayout` is a server-side implementation of link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout[CSS Flexible Box Layout]. It extends `FlexLayout` and contains convenience methods for setting `flex`, `flex-basis`, `flex-direction`, `flex-shrink` and `flex-wrap`. It also supports setting `background-color`, `margin`, `overflow`, `padding`, `shadow`, `spacing` and `theme`.
