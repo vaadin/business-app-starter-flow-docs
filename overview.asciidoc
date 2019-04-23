@@ -133,17 +133,7 @@ The Business App Starter is built using Vaadin's link:https://vaadin.com/themes/
 
 Lumo uses CSS custom properties to define typography, colors, sizing, spacing etc. Most visual styles can be achieved by tweaking these properties. For the more intricate theming use link:https://github.com/vaadin/vaadin-themable-mixin/wiki[ThemableMixin].
 
-=== Theme properties
-Lumo defines a set of CSS custom properties you can use to apply consistent visual styles across your application. The Business App Starter enables you to apply these on the server-side. For example, to apply a medium size bottom margin:
-
-[source,java]
-----
-component.addClassName(LumoStyles.Margin.Bottom.M);
-----
-
 ==== Typography
-[%hardbreaks]
-Lumo styles:
 https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
 
 |===
@@ -169,7 +159,7 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
 |===
 
 ==== Colors
-Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/colors.html
+https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/colors.html
 
 |===
 |Color|Values
@@ -197,7 +187,7 @@ Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/colors.html
 |===
 
 ==== Style
-Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/styles.html
+https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/styles.html
 
 |===
 |Color|Values
@@ -213,7 +203,7 @@ Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/styles.html
 |===
 
 ==== Sizing and Spacing
-Lumo styles: https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/sizing-and-spacing.html
+https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/sizing-and-spacing.html
 
 |===
 |Property|Size|Direction
