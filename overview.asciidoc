@@ -97,10 +97,9 @@ The Business App Starter comes with the following custom components:
 * NaviTabs (closable)
 
 === AppBar
-An application header element that consists of a set of optional components: main menu icon, contextual navigation icon, title, tabs, action items and avatar.
+A header component consisting of a main menu icon, contextual navigation icon, title, tabs, action items and avatar. All building blocks are optional.
 
-An AppBar with a main menu icon, title, tabs and avatar:
-
+.AppBar with a main menu icon, title, tabs and avatar.
 image::images/app-bar.png[]
 
 === FlexBoxLayout
