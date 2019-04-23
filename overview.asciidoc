@@ -137,26 +137,34 @@ Lumo uses CSS custom properties to define typography, colors, sizing, spacing et
 https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
 
 |===
-|Property|Values
+|Property|Values|Example
 
 |`FontFamily`
 |`MONOSPACE`
+|`component.addClassName(LumoStyles.FontFamily.MONOSPACE);`
 
 |`FontSize`
 |`XXS`, `XS`, `S`, `M` (default), `L`, `XL`, `XXL`, `XXXL`
+|`createLabel(FontSize, String)`, `createLabel(FontSize, TextColor, String)` or `component.addClassName(FontSize.XS.getClassName());`
 
 |`FontWeight`
 |`BOLD`, `BOLDER`, `LIGHTER`, `NORMAL`, `_100`, `_200`, `_300`, `_400`, `_500`, `_600`, `_700`, `_800`, `_900`
+|`UIUtils.setFontWeight(FontWeight.BOLD, component);`
 
-|`Header`
+|`Headings`
 |`H1`, `H2`, `H3`, `H4`, `H5`, `H6`
+|`UIUtils.createH1Label("Heading");` or `component.addClassName(LumoStyles.Heading.H1);``
 
 |`IconSize`
 |`S`, `M`, `L`
+|`UIUtils.createSmallIcon(VaadinIcon)`, `UIUtils.createLargeIcon(VaadinIcon)` or `UIUtils.createIcon(IconSize, TextColor, VaadinIcon);`
 
 |`TextColor`
 |`HEADER`, `BODY`, `SECONDARY`, `TERTIARY`, `DISABLED`, `PRIMARY`, `PRIMARY_CONTRAST`, `ERROR`, `ERROR_CONTRAST`, `SUCCESS`, `SUCCESS_CONTRAST`
+|`component.addClassName(TextColor.SECONDARY.getClassName());`
 |===
+
+
 
 ==== Colors
 https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/colors.html
