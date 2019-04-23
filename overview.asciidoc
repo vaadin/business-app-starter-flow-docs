@@ -121,7 +121,7 @@ image::images/details-drawer.png[Master-detail view with a `DetailsDrawer` shown
 === NaviTabs
 Tabs that when clicked navigate to a specific target (view) and that can be closed.
 
-image::images/navi-tabs.png
+image::images/navi-tabs.png[]
 
 Any component can be placed in the suffix and prefix slots.
 
