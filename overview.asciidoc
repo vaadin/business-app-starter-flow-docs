@@ -225,7 +225,7 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/sizing-and-spacing.html
 A number of utility classes were introduced to make theming more consistent and efficient.
 
 ==== Buttons
-Most commonly used button variations can be produced with `UIUtils`. The methods accept `String` and/or `VaadinIcon`.
+The most common button variations can be created with `UIUtils`. The methods below accept `String` and/or `VaadinIcon`.
 
 |===
 |Variant|Method
