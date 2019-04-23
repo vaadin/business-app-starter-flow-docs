@@ -33,16 +33,16 @@ The navigation slot is reserved for the `NaviDrawer`: a responsive and collapsib
 The application supports two different navigation modes:
 
 * *Traditional*: clicking a link changes the current view.
-* *Tabbed*: users can open and close tabs. Clicking a link changes the content of the current tab.
+* *Tabbed*: a browser-esque experience where users can open and close tabs. Clicking a link changes the content of the current tab.
 
 === View Slot
-Top-level views should be placed in the view slot. This is accomplished by setting your view's `@Route` `layout` parameter to `MainLayout.class`:
+The intended slot for views. Place your view in this slot by setting `@Route` `layout` to `MainLayout.class`:
 
 [source,java]
 ----
-@Route(value = "statistics", layout = MainLayout.class)
-@PageTitle("Statistics")
-public class Statistics extends ViewFrame {
+@Route(value = "my-view", layout = MainLayout.class)
+@PageTitle("My View")
+public class MyView extends Div {
 ----
 
 ==== ViewFrame & SplitViewFrame
