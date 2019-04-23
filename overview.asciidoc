@@ -97,7 +97,8 @@ The Business App Starter comes with the following custom components:
 `AppBar` consists of a main menu icon, contextual navigation icon, title, tabs, action items and avatar. All building blocks are optional.
 
 .AppBar with a main menu icon, title, tabs and avatar.
-images/app-bar.png[AppBar with a main menu icon, title, tabs and avatar.]
+
+image::images/app-bar.png[AppBar with a main menu icon, title, tabs and avatar.]
 
 `TabBar` is a simpler version of `AppBar` that discards the contextual navigation icon and title.
 
