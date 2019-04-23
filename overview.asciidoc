@@ -20,7 +20,6 @@ image::images/overview-1.png[align=center]
 
 == Structure
 The Business App Starter's structure is comprised of several slots designed to help implement any layout.
-
 image::images/structure.png[align=center]
 
 === Header & Footer Slots
@@ -52,7 +51,6 @@ All of the Business App Starter's views extend either `ViewFrame` or `SplitViewF
 Here are a few examples of common layouts used in business applications.
 
 image::images/layout-1.png[align=center]
-
 An often-used composition where the outer header is the most prominent element. The view itself sports a header for showing the title.
 
 Used slots:
@@ -64,7 +62,6 @@ Used slots:
 ***
 
 image::images/layout-2.png[align=center]
-
 This layout puts more focus on the navigation drawer. Suitable for complex hierarchical navigation structures. The view footer houses view-specific actions.
 
 Used slots:
@@ -76,7 +73,6 @@ Used slots:
 ***
 
 image::images/layout-3.png[align=center]
-
 The navigation is placed in the outer header. The view area is maximised but the navigation has to be simple. The view's sidebar is used to display additional details.
 
 Used slots:
@@ -117,14 +113,12 @@ image::images/details-drawer.png[Master-detail view with a `DetailsDrawer` shown
 `FlexBoxLayout` is a server-side implementation of link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout[CSS Flexible Box Layout]. It extends `FlexLayout` and contains convenience methods for setting `flex`, `flex-basis`, `flex-direction`, `flex-shrink` and `flex-wrap`. It also supports setting `background-color`, `margin`, `overflow`, `padding`, `shadow`, `spacing` and `theme`.
 
 === ListItem
-image::images/list-item-1.png
+Any component can be placed in the suffix and prefix slots.
+image::images/list-item-1.png[]
 
 === NaviTabs
 Tabs that when clicked navigate to a specific target (view) and that can be closed.
-
 image::images/navi-tabs.png[]
-
-Any component can be placed in the suffix and prefix slots.
 
 NOTE: Please remember that all custom components that ship with the Business App Starter can and should be customised to suit your business needs and requirements.
 
