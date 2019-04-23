@@ -361,4 +361,4 @@ If other variations or combinations are needed use `createIcon(IconSize, TextCol
 |===
 
 === Customise the Utility Classes
-It is advised to create or modify the utility classes according to your needs. Create custom components and utility methods for reoccurring UI patterns. Doing this will make the code easier to maintain and more consistent.
+It is advised to create and modify the utility classes according to your needs. Creating custom components and utility methods for reoccurring UI patterns will make the code more consistent and easier to maintain.
