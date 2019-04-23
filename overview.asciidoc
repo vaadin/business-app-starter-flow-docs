@@ -222,15 +222,7 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/sizing-and-spacing.html
 |===
 
 === Utility Classes
-RAT introduces number of utility classes to ease applying consistent styling and improve efficiency when initialising the most commonly needed UI elements.
-
-==== Example
-[source,java]
-----
-Label title = UIUtils.createH2Label("Title");
-----
-
-This will output an `<label>` element that already has suitable style name in place.
+A number of utility classes were introduced to make theming more consistent and efficient.
 
 ==== Buttons
 Most commonly used button variations can be produced with `UIUtils`. The methods accept `String` and/or `VaadinIcon`.
