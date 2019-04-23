@@ -145,7 +145,7 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
 
 |`FontSize`
 |`XXS`, `XS`, `S`, `M` (default), `L`, `XL`, `XXL`, `XXXL`
-|`createLabel(FontSize, String)`, `createLabel(FontSize, TextColor, String)` or `component.addClassName(FontSize.XS.getClassName());`
+|`UIUtils.createLabel(FontSize, String)`, `UIUtils.createLabel(FontSize, TextColor, String)` or `component.addClassName(FontSize.XS.getClassName());`
 
 |`FontWeight`
 |`BOLD`, `BOLDER`, `LIGHTER`, `NORMAL`, `_100`, `_200`, `_300`, `_400`, `_500`, `_600`, `_700`, `_800`, `_900`
@@ -161,10 +161,8 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
 
 |`TextColor`
 |`HEADER`, `BODY`, `SECONDARY`, `TERTIARY`, `DISABLED`, `PRIMARY`, `PRIMARY_CONTRAST`, `ERROR`, `ERROR_CONTRAST`, `SUCCESS`, `SUCCESS_CONTRAST`
-|`component.addClassName(TextColor.SECONDARY.getClassName());`
+|`UIUtils.createLabel(FontSize, String)`, `UIUtils.createLabel(FontSize, TextColor, String)` or `component.addClassName(TextColor.SECONDARY.getClassName());`
 |===
-
-
 
 ==== Colors
 https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/colors.html
