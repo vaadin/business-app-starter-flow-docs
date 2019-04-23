@@ -145,7 +145,7 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
 
 |`FontSize`
 |`XXS`, `XS`, `S`, `M` (default), `L`, `XL`, `XXL`, `XXXL`
-|`UIUtils.createLabel(FontSize, String);`, `UIUtils.createLabel(FontSize, TextColor, String);` or `component.addClassName(FontSize.XS.getClassName());`
+|`UIUtils.createLabel(FontSize.XL, "I'm extra large");` or `component.addClassName(FontSize.XL.getClassName());`
 
 |`FontWeight`
 |`BOLD`, `BOLDER`, `LIGHTER`, `NORMAL`, `_100`, `_200`, `_300`, `_400`, `_500`, `_600`, `_700`, `_800`, `_900`
@@ -157,11 +157,11 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
 
 |`IconSize`
 |`S`, `M`, `L`
-|`UIUtils.createSmallIcon(VaadinIcon);`, `UIUtils.createLargeIcon(VaadinIcon);` or `UIUtils.createIcon(IconSize, TextColor, VaadinIcon);`
+|`UIUtils.createSmallIcon(VaadinIcon.HOME);`, `UIUtils.createLargeIcon(VaadinIcon.HOME);` or `UIUtils.createIcon(IconSize.L, TextColor.PRIMARY, VaadinIcon.HOME);`
 
 |`TextColor`
 |`HEADER`, `BODY`, `SECONDARY`, `TERTIARY`, `DISABLED`, `PRIMARY`, `PRIMARY_CONTRAST`, `ERROR`, `ERROR_CONTRAST`, `SUCCESS`, `SUCCESS_CONTRAST`
-|`UIUtils.createLabel(FontSize, String);`, `UIUtils.createLabel(FontSize, TextColor, String);` or `component.addClassName(TextColor.SECONDARY.getClassName());`
+|`UIUtils.createLabel(TextColor.SUCCESS, "Success");` or `component.addClassName(TextColor.SECONDARY.getClassName());`
 |===
 
 ==== Colors
