@@ -53,7 +53,7 @@ Here are a few examples of common layouts used in business applications.
 
 image::images/layout-01.png[]
 
-An often-used composition where the outer header is the most prominent element. The view itself sports header for showing the title.
+An often-used composition where the outer header is the most prominent element. The view itself sports a header for showing the title.
 
 Used slots:
 
