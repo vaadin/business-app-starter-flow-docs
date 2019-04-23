@@ -109,6 +109,7 @@ Server-side component for link:https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/d
 
 === DetailsDrawer
 Mainly intended for usage in master-detail views. Composed of a header, (scrollable) content and footer.
+
 image::images/details-drawer.png[]
 
 === FlexBoxLayout
