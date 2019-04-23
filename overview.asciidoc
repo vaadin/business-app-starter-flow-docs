@@ -117,6 +117,7 @@ image::images/details-drawer.png[Master-detail view with a `DetailsDrawer` shown
 `FlexBoxLayout` is a server-side implementation of link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout[CSS Flexible Box Layout]. It extends `FlexLayout` and contains convenience methods for setting `flex`, `flex-basis`, `flex-direction`, `flex-shrink` and `flex-wrap`. It also supports setting `background-color`, `margin`, `overflow`, `padding`, `shadow`, `spacing` and `theme`.
 
 === ListItem
+image::images/list-item-1.png
 
 === NaviTabs
 Tabs that when clicked navigate to a specific target (view) and that can be closed.
