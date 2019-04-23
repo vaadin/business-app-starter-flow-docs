@@ -53,7 +53,7 @@ Here are a few examples of common layouts used in business applications.
 
 image::images/layout-01.png[]
 
-A common layout where the outer header is the most prominent element. The view uses a view header to show its title.
+An often-used composition where the outer header is the most prominent element. The view itself sports header for showing the title.
 
 Used slots:
 
@@ -65,7 +65,7 @@ Used slots:
 
 image::images/layout-02.png[]
 
-This layout puts more focus on sidebar navigation. Suitable for complex hierarchical navigation structures. The view sports a footer that houses view-specific actions.
+This layout puts more focus on the navigation drawer. Suitable for complex hierarchical navigation structures. The view footer houses view-specific actions.
 
 Used slots:
 
