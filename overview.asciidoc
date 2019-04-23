@@ -36,26 +36,17 @@ The application supports two different navigation modes:
 * *Tabbed*: a browser-esque experience where users can open and close tabs. Clicking a link changes the content of the current tab.
 
 === View Slot
-The intended slot for views. Place your view in this slot by setting `@Route` `layout` to `MainLayout.class`:
+The intended slot for views. Place views in this slot by setting the `@Route` annotation's `layout` parameter to `MainLayout.class`.
 
 [source,java]
 ----
 @Route(value = "my-view", layout = MainLayout.class)
 @PageTitle("My View")
-public class MyView extends Div {
+public class MyView extends ViewFrame {
 ----
 
 ==== ViewFrame & SplitViewFrame
-All of the Business App Starter's views extend either `ViewFrame` or `SplitViewFrame`. They simplify the process of creating views that contain a header, scrollable content and footer.
-
-The only difference between them is that `SplitViewFrame` houses an additional *details* slot.
-
-* A view's *header slot* can be used for titles & identifiers, view specific actions, secondary navigation etc.
-* The main content of a view should be placed in the *content slot*. This slot should take up the most screen estate, while the other slots contain supportive elements.
-* Place detailed information in the *details slot*, e.g. when creating master-detail views. (`SplitViewFrame`)
-* The *footer slot* can be used for view actions, summary data, selection info etc.
-
-`ViewFrame` and `SplitViewFrame` can be customised or extended to house more slots.
+All of the Business App Starter's views extend either `ViewFrame` or `SplitViewFrame`. They simplify the process of creating views that contain a header, scrollable content and footer. `SplitViewFrame` houses an additional *details* slot for creating master-detail views.
 
 === Layout Examples
 Here’s a few examples of common layouts used in business applications.
