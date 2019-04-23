@@ -5,6 +5,7 @@ layout: page
 ---
 
 = Business App Starter
+
 A starter for building responsive business web apps. It consists of a collection of components, view templates, theming utilities and best practises that can help teams save more than a week of development time at the start of a new project.
 
 == Structure
