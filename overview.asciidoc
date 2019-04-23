@@ -46,14 +46,14 @@ public class MyView extends ViewFrame {
 ----
 
 ==== ViewFrame & SplitViewFrame
-All of the Business App Starter's views extend either `ViewFrame` or `SplitViewFrame`. They simplify the process of creating views that contain a header, scrollable content and footer. `SplitViewFrame` houses an additional *details* slot for creating master-detail views.
+All of the Business App Starter's views extend either `ViewFrame` or `SplitViewFrame`. They simplify the process of creating views that contain a header, scrollable content and footer. `SplitViewFrame` houses an additional details slot for creating master-detail views.
 
 === Layout Examples
-Here’s a few examples of common layouts used in business applications.
+Here are a few examples of common layouts used in business applications.
 
 image::images/layout-01.png[]
 
-Very common layout where the outer header is the most prominent element. The view uses a view header to show the view title.
+A common layout where the outer header is the most prominent element. The view uses a view header to show its title.
 
 Used slots:
 
@@ -65,12 +65,12 @@ Used slots:
 
 image::images/layout-02.png[]
 
-This layout puts more focus on the sidebar navigation. Suitable for complex hierarchical navigation structures. View area has footer that includes action buttons.
+This layout puts more focus on sidebar navigation. Suitable for complex hierarchical navigation structures. The view sports a footer that houses view-specific actions.
 
 Used slots:
 
-* Header (inner)
 * Navigation drawer
+* Header (inner)
 * View with footer
 
 ***
