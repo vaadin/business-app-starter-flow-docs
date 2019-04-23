@@ -86,6 +86,14 @@ Used slots:
 
 == Custom Components
 
+* AppBar & TabBar
+* Badge
+* DetailsDrawer
+* FlexBoxLayout
+* ListItem
+* NaviDrawer
+* NaviTabs (closable)
+
 === Closable Tabs
 An additional feature to `Tabs` that allows discarding tabs. Used in tabbed navigation mode.
 
@@ -93,7 +101,7 @@ An additional feature to `Tabs` that allows discarding tabs. Used in tabbed navi
 List item is used to display an entity in formatted manner. Most common use is to display an icon together with a caption and value. There are few built-in options to alter the appearance.
 
 === FlexBoxLayout
-`FlexBoxLayout` is a server-side implementation of link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout[CSS Flexible Box Layout]. It extends `FlexLayout` and contains convenience methods for setting `background-color`, `flex`, `flex-basis`, `flex-direction`, `flex-shrink`, `flex-wrap`, `margin`, `overflow`, `padding`, `shadow`, `spacing` and `theme`.
+`FlexBoxLayout` is a server-side implementation of link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout[CSS Flexible Box Layout]. It extends `FlexLayout` and contains convenience methods for setting `flex`, `flex-basis`, `flex-direction`, `flex-shrink` and `flex-wrap`. It also supports setting `background-color`, `margin`, `overflow`, `padding`, `shadow`, `spacing` and `theme`.
 
 NOTE: Please remember that all custom components that ship with the Business App Starter can and should be customised to suit your business needs and requirements.
 
