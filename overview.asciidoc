@@ -116,9 +116,10 @@ image::images/details-drawer.png[Master-detail view with a `DetailsDrawer` shown
 `FlexBoxLayout` is a server-side implementation of link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout[CSS Flexible Box Layout]. It extends `FlexLayout` and contains convenience methods for setting `flex`, `flex-basis`, `flex-direction`, `flex-shrink` and `flex-wrap`. It also supports setting `background-color`, `margin`, `overflow`, `padding`, `shadow`, `spacing` and `theme`.
 
 === ListItem
-A list item made up of a prefix, primary text, secondary text and suffix. Any component can be placed in the prefix and suffix slots.
+A list item comprised of a prefix, text (primary & secondary) and suffix. Only the primary text is mandatory. Any component can be placed in the prefix and suffix slots.
 
-image::images/list-item-1.png[align=center]
+.`ListItem` with a prefix icon, primary and secondary texts, as well as a suffix button.
+image::images/list-item-1.png[`ListItem` with a prefix icon, primary and secondary texts, as well as a suffix button., align=center]
 
 === NaviTabs
 Tabs that when clicked navigate to a specific target (view) and that can be closed.
