@@ -20,6 +20,7 @@ image::images/overview-1.png[align=center]
 
 == Structure
 The Business App Starter's structure is comprised of several slots designed to help implement any layout.
+
 image::images/structure.png[align=center]
 
 === Header & Footer Slots
@@ -107,6 +108,7 @@ Server-side component for link:https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/d
 Mainly intended for usage in master-detail views. Composed of a header, (scrollable) content and footer.
 
 .Master-detail view with a `DetailsDrawer` shown on the far right.
+
 image::images/details-drawer.png[Master-detail view with a `DetailsDrawer` shown on the far right., align=center]
 
 === FlexBoxLayout
@@ -114,10 +116,12 @@ image::images/details-drawer.png[Master-detail view with a `DetailsDrawer` shown
 
 === ListItem
 Any component can be placed in the suffix and prefix slots.
+
 image::images/list-item-1.png[]
 
 === NaviTabs
 Tabs that when clicked navigate to a specific target (view) and that can be closed.
+
 image::images/navi-tabs.png[]
 
 NOTE: Please remember that all custom components that ship with the Business App Starter can and should be customised to suit your business needs and requirements.
