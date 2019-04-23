@@ -118,6 +118,12 @@ image::images/details-drawer.png[Master-detail view with a `DetailsDrawer` shown
 
 === ListItem
 
+=== NaviTabs
+Tabs that when clicked navigate to a specific target (view) and that can be closed.
+
+image::images/navi-tabs.png
+
+Any component can be placed in the suffix and prefix slots.
 
 NOTE: Please remember that all custom components that ship with the Business App Starter can and should be customised to suit your business needs and requirements.
 
