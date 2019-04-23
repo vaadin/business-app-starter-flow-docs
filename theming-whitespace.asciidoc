@@ -1,5 +1,5 @@
 ---
-title: Theming: Whitespace
+title: Theming - Whitespace
 order: 5
 layout: page
 ---
