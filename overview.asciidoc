@@ -304,7 +304,7 @@ UIUtils.createButton(
 |===
 |Type|Method|Example
 
-|Colors
+|Color
 |`createLabel(TextColor, String)`
 |`UIUtils.createLabel(TextColor.PRIMARY, "Primary label");`
 
@@ -316,42 +316,39 @@ UIUtils.createButton(
 |`createLabel(FontSize, TextColor, String)`
 |`UIUtils.createLabel(FontSize.S, TextColor.PRIMARY, "Small primary label");`
 
-|Headings
+|Heading
 |`createH1Label(String)`, `createH2Label(String)`, `createH3Label(String)`, `createH4Label(String)`, `createH5Label(String)`, `createH6Label(String)`
 |`UIUtils.createH1Label("H1 label");`
 |===
 
 ==== Misc
 |===
-|Method|Description|Example
+|Method|Description
 
-|`setColSpan`
+|`setColSpan(Integer, Components...)`
 |Sets the column span for components in a `FormLayout`.
-|`UIUtils.setColSpan(2, field);`
 
-|`createFloatingActionButton`
+|`createFloatingActionButton(VaadinIcon)`
 |Initialises a `Button` positioned in the bottom right corner of its container. Used for primary actions.
-|`UIUtils.createFloatingActionButton(VaadinIcon.PLUS);`
 
-|`createInitials`
+|`createInitials(String)`
 |Creates an avatar with the given initials.
-|`UIUtils.createInitials("JK");`
 |===
 
 ==== Numbers
 |===
 |Method|Description
 
-|`formatAmount`
+|`formatAmount(Double)`
 |Formats a decimal amount for improved legibility.
 
-|`createAmountLabel`
+|`createAmountLabel(Double)`
 |Initialises a monospaced H5 label for improved legibility of decimal values.
 
-|`formatUnits`
+|`formatUnits(Integer)`
 |Formats an integer amount for improved legibility.
 
-|`createUnitsLabel`
+|`createUnitsLabel(Integer)`
 |Initialises a monospaced H5 label for improved legibility of integer values.
 |===
 
@@ -392,13 +389,7 @@ UIUtils.createButton(
 |`createLargeIcon`
 |===
 
-Combinations can be created with `createIcon(IconSize, TextColor, VaadinIcon)`.
-
-[source,java]
-----
-// A medium-sized tertiary icon.
-UIUtils.createIcon(IconSize.M, TextColor.TERTIARY, VaadinIcon.HOME);
-----
+Combinations can be created with `createIcon(IconSize, TextColor, VaadinIcon)`, e.g. `UIUtils.createIcon(IconSize.M, TextColor.TERTIARY, VaadinIcon.HOME);`.
 
 === Customise the Utility Classes
 It is advised to create and modify the utility classes according to your needs. Creating custom components and utility methods for reoccurring UI patterns will make the code more consistent and easier to maintain.
