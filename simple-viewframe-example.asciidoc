@@ -62,7 +62,7 @@ public class MyView extends ViewFrame {
 }
 ----
 
-image::images/03/example.png[]
+image::images/example.png[]
 
 If we wanted to distinguish the slots from one another, we could utilise some of the styles that the Business App Starter provides, e.g. *borders* and *shadows*.
 
@@ -75,7 +75,7 @@ header.addClassName(BoxShadowBorders.BOTTOM);
 footer.addClassName(BoxShadowBorders.TOP);
 ----
 
-image::images/03/example-borders.png[]
+image::images/example-borders.png[]
 
 === Shadows
 Applying shadows using `addClassName`:
@@ -91,7 +91,7 @@ Alternatively you can use the `UIUtils` utility class:
 UIUtils.setShadow(Shadow.S, header, footer);
 ----
 
-image::images/03/example-shadows.png[]
+image::images/example-shadows.png[]
 
 === Background Color
 You can also change the background color on the server-side using `UIUtils`.
@@ -100,6 +100,6 @@ You can also change the background color on the server-side using `UIUtils`.
 UIUtils.setBackgroundColor(LumoStyles.Color.BASE_COLOR, header, footer);
 ----
 
-image::images/03/example-background.png[]
+image::images/example-background.png[]
 
 For more information on how to theme your application using the various Business App Starter utilities please see link:https://vaadin.com/docs/v13/business-app/overview.html[Overview], link:https://vaadin.com/docs/v13/business-app/theming-whitespace.html[Theming: Whitespace] and link:https://vaadin.com/docs/v13/business-app/theming-typography.html[Theming: Typography].
