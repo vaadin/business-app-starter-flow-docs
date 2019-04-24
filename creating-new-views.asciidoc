@@ -12,7 +12,7 @@ You can also extend `ViewFrame` to build a view with a header, scrollable conten
 
 == Example 1: Extending Component
 
-If you extend `Component` directly, you must annotate the class with `@Tag`, e.g. `@Tag("div")`. For more information on how to use `Component` as a container, please see the link:https://vaadin.com/docs/v13/flow/creating-components/tutorial-component-container.html[documentation].
+If you extend `Component` directly, you must annotate the class with `@Tag`, e.g. `@Tag("div")`. For more information on how to use `Component` as a container, please see the link:https://vaadin.com/docs/v13/flow/creating-components/tutorial-component-container.html[Creating a Component Container].
 
 [source,java]
 ----
