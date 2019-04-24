@@ -46,7 +46,7 @@ component.addClassNames(
 === Horizontal
 Horizontal is shorthand for applying margin, padding and spacing on the left and right.
 
-image::images/horizontal.png[]
+image::images/horizontal.png[align=center]
 
 ==== Margin
 [%hardbreaks]
@@ -75,7 +75,7 @@ image::images/horizontal.png[]
 === Vertical
 Vertical is shorthand for applying margin, padding and spacing on the bottom and top.
 
-image::images/vertical.png[]
+image::images/vertical.png[align=center]
 
 ==== Margin
 [%hardbreaks]
@@ -104,7 +104,7 @@ image::images/vertical.png[]
 === Tall
 Margin, padding or spacing that has bigger vertical space than horizontal space.
 
-image::images/tall.png[]
+image::images/tall.png[align=center]
 
 ==== Margin
 [%hardbreaks]
@@ -133,7 +133,7 @@ image::images/tall.png[]
 === Uniform
 An equal amount of margin, padding and spacing in all directions.
 
-image::images/uniform.png[]
+image::images/uniform.png[align=center]
 
 ==== Margin
 [%hardbreaks]
@@ -162,7 +162,7 @@ image::images/uniform.png[]
 === Wide
 Margin, padding or spacing that has bigger horizontal space than vertical space.
 
-image::images/wide.png[]
+image::images/wide.png[align=center]
 
 ==== Margin
 [%hardbreaks]

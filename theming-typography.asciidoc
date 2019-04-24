@@ -19,7 +19,7 @@ The `H1`, `H2`, `H3`, `H4`, `H5` and `H6` headings all have margin by default, w
 == Font Size
 Lumo defines 8 different font sizes: `XXS`, `XS`, `S`, `M` (default), `L`, `XL`, `XXL` and `XXXL`.
 
-image::images/font-size.png[]
+image::images/font-size.png[align=center]
 
 The Business App Starter makes it easy to create labels of a specific size (*example 1*). You can also set the font size for other components using class names (*example 2*).
 
@@ -40,7 +40,7 @@ component.addClassName(FontSize.XL.getClassName());
 == Text Color
 There are 11 text colors in Lumo: `HEADER`, `BODY` (default), `SECONDARY`, `TERTIARY`, `DISABLED`, `PRIMARY`, `PRIMARY_CONTRAST`, `ERROR`, `ERROR_CONTRAST`, `SUCCESS` and `SUCCESS_CONTRAST`.
 
-image::images/text-color.png[]
+image::images/text-color.png[align=center]
 
 You can use `UIUtils` to create labels with a specific text color (*example 3*). For other components you can use class names (*example 4*).
 

@@ -8,7 +8,7 @@ layout: page
 
 As stated in the link:https://vaadin.com/docs/v13/business-app/overview.html[overview] the Business App Starter is structured as follows:
 
-image::images/structure.png[]
+image::images/structure.png[align=center]
 
 You can configure the application's headers and footers in `MainLayout::initHeadersAndFooters`. The only difference between these is their placement in the UI. Any `Component`, and any number of `Components`, can be slotted in.
 
@@ -28,11 +28,11 @@ private void initHeadersAndFooters() {
 }
 ----
 
-image::images/header-outer.png[]
+image::images/header-outer.png[align=center]
 
 If you instead use `setAppHearInner` you get:
 
-image::images/header-inner.png[]
+image::images/header-inner.png[align=center]
 
 == Footers
 Most typically used for mobile navigation. Status bars, toolbars and summaries are also pretty common.
@@ -62,7 +62,7 @@ UIUtils.setShadow(Shadow.M, footer);
 setAppFooterInner(footer);
 ----
 
-image::images/footer-inner.png[]
+image::images/footer-inner.png[align=center]
 
 === Example 2
 Status bar located in the outer footer.
@@ -90,4 +90,4 @@ UIUtils.setShadow(Shadow.M, footer);
 setAppFooterOuter(footer);
 ----
 
-image::images/footer-outer.png[]
+image::images/footer-outer.png[align=center]
