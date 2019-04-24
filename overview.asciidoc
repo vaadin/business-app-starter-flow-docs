@@ -153,7 +153,7 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
 
 |`Headings`
 |`H1`, `H2`, `H3`, `H4`, `H5`, `H6`
-|`UIUtils.createH1Label("Heading");` or `component.addClassName(LumoStyles.Heading.H1);``
+|`component.addClassName(LumoStyles.Heading.H1);``
 
 |`IconSize`
 |`S`, `M`, `L`
@@ -215,11 +215,6 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/styles.html
 |`S`, `M`, `L`, `XL`
 |`UIUtils.setShadow(Shadow.L, component);`
 |===
-
-[source,java]
-----
-UIUtils.setBackgroundColor(LumoStyles.Color.Contrast._20, component);
-----
 
 ==== Sizing and Spacing
 https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/sizing-and-spacing.html
