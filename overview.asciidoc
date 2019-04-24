@@ -153,11 +153,11 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/typography.html
 
 |`Headings`
 |`H1`, `H2`, `H3`, `H4`, `H5`, `H6`
-|`component.addClassName(LumoStyles.Heading.H1);``
+|`component.addClassName(LumoStyles.Heading.H1);`
 
 |`IconSize`
 |`S`, `M`, `L`
-|`UIUtils.createSmallIcon(VaadinIcon.HOME);`, `UIUtils.createLargeIcon(VaadinIcon.HOME);` or `UIUtils.createIcon(IconSize.L, TextColor.PRIMARY, VaadinIcon.HOME);`
+|`UIUtils.createSmallIcon(VaadinIcon.HOME);`, `UIUtils.createLargeIcon(VaadinIcon.HOME);`
 
 |`TextColor`
 |`HEADER`, `BODY`, `SECONDARY`, `TERTIARY`, `DISABLED`, `PRIMARY`, `PRIMARY_CONTRAST`, `ERROR`, `ERROR_CONTRAST`, `SUCCESS`, `SUCCESS_CONTRAST`
@@ -197,7 +197,7 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/colors.html
 UIUtils.setBackgroundColor(LumoStyles.Color.Contrast._20, component);
 ----
 
-==== Style
+==== Styles
 https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/styles.html
 
 |===
@@ -251,10 +251,10 @@ flexBoxLayout.setSpacing(Bottom.S);
 ----
 
 === Utility Classes
-A number of utility classes, most importantly `UIUtils`, were introduced to make theming more consistent and efficient.
+A number of utility classes, most importantly `UIUtils`, were introduced to make theming more consistent and efficient. `UIUtils` can be used to create common button variants, labels and icons of different colors and sizes etc.
 
 ==== Buttons
-The most common variations can be created with `UIUtils`. The methods below accept `String` and/or `VaadinIcon`.
+The methods below accept `String` and/or `VaadinIcon`.
 
 |===
 |Variant|Method
@@ -278,7 +278,7 @@ The most common variations can be created with `UIUtils`. The methods below acce
 |`createSmallButton`, `createLargeButton`
 |===
 
-If other variations or combinations are needed use `createButton(ButtonVariant...)`.
+Combinations can be created with `createButton(ButtonVariant...)`.
 
 [source,java]
 ----
@@ -292,22 +292,26 @@ UIUtils.createSuccessButton(VaadinIcon.CHECK);
 UIUtils.createErrorButton("Error", VaadinIcon.WARNING);
 
 // Small tertiary button, text and icon.
-UIUtils.createButton("Tertiary Small", VaadinIcon.HOME, ButtonVariant.LUMO_TERTIARY, ButtonVariant.LUMO_SMALL);
+UIUtils.createButton(
+  "Tertiary Small",
+  VaadinIcon.HOME,
+  ButtonVariant.LUMO_TERTIARY,
+  ButtonVariant.LUMO_SMALL
+);
 ----
 
 ==== Labels
-
 |===
 |Type|Method
 
-|Size & color
-|`createLabel(FontSize, TextColor, String)`
+|Colors
+|`createLabel(TextColor, String)`
 
 |Size
 |`createLabel(FontSize, String)`
 
-|Colors
-|`createLabel(TextColor, String)`
+|Size & color
+|`createLabel(FontSize, TextColor, String)`
 
 |Headings
 |`createH1Label(String)`, `createH2Label(String)`, `createH3Label(String)`, `createH4Label(String)`, `createH5Label(String)`, `createH6Label(String)`
@@ -317,19 +321,14 @@ UIUtils.createButton("Tertiary Small", VaadinIcon.HOME, ButtonVariant.LUMO_TERTI
 |===
 |Method|Description
 
-|`createInitials`
-|Creates circular element with centered initials.
+|`setColSpan`
+|Sets the column span for components in a `FormLayout`.
 
 |`createFloatingActionButton`
-|Initialises an action button that appears in bottom right corner of the view. Most commonly used to trigger main action on view.
-|===
+|Initialises a floating action button positioned in the bottom right corner of its container. Used for primary actions.
 
-==== Form Layout
-|===
-|Method|Description
-
-|`setFormLayoutColSpan`
-|Defines the column span elements in a FormLayout.
+|`createInitials`
+|Creates an avatar with the given initials.
 |===
 
 ==== Numbers
