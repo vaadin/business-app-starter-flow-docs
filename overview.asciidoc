@@ -257,7 +257,7 @@ A number of utility classes, most importantly `UIUtils`, were introduced to make
 The methods below accept `String` and/or `VaadinIcon`.
 
 |===
-|Variant|UIUtils Method
+|Variant|UIUtils method
 
 |Primary
 |`createPrimaryButton`
@@ -302,7 +302,7 @@ UIUtils.createButton(
 
 ==== Labels
 |===
-|Type|Method
+|Type|UIUtils method
 
 |Color
 |`createLabel(TextColor, String)`
@@ -317,23 +317,40 @@ UIUtils.createButton(
 |`createH1Label(String)`, `createH2Label(String)`, `createH3Label(String)`, `createH4Label(String)`, `createH5Label(String)`, `createH6Label(String)`
 |===
 
-==== Misc
+==== Icons
 |===
-|Method|Description
+|Variant|UIUtils method
 
-|`setColSpan(Integer, Components...)`
-|Sets the column span for components in a `FormLayout`.
+|Primary
+|`createPrimaryIcon(VaadinIcon)`
 
-|`createFloatingActionButton(VaadinIcon)`
-|Initialises a `Button` positioned in the bottom right corner of its container. Used for primary actions.
+|Secondary
+|`createSecondaryIcon(VaadinIcon)`
 
-|`createInitials(String)`
-|Creates an avatar with the given initials.
+|Tertiary
+|`createTertiaryIcon(VaadinIcon)`
+
+|Disabled
+|`createDisabledIcon(VaadinIcon)`
+
+|Success
+|`createSuccessIcon(VaadinIcon)`
+
+|Error
+|`createErrorIcon(VaadinIcon)`
+
+|Small
+|`createSmallIcon(VaadinIcon)`
+
+|Large
+|`createLargeIcon(VaadinIcon)`
 |===
+
+Combinations can be created with `createIcon(IconSize, TextColor, VaadinIcon)`.
 
 ==== Numbers
 |===
-|Method|Description
+|UIUtils method|Description
 
 |`formatAmount(Double)`
 |Formats a decimal amount for improved legibility.
@@ -350,42 +367,25 @@ UIUtils.createButton(
 
 ==== Dates
 |===
-|Method|Description
+|UIUtils method|Description
 
 |`formatDate(LocalDate)`
 |Formats a `LocalDate` according to the format defined in `UIUtils`.
 |===
 
-==== Icons
+==== Misc
 |===
-|Variant|Method
+|UIUtils method|Description
 
-|Primary
-|`createPrimaryIcon`
+|`setColSpan(Integer, Components...)`
+|Sets the column span for components in a `FormLayout`.
 
-|Secondary
-|`createSecondaryIcon`
+|`createFloatingActionButton(VaadinIcon)`
+|Initialises a `Button` positioned in the bottom right corner of its container. Used for primary actions.
 
-|Tertiary
-|`createTertiaryIcon`
-
-|Disabled
-|`createDisabledIcon`
-
-|Success
-|`createSuccessIcon`
-
-|Error
-|`createErrorIcon`
-
-|Small
-|`createSmallIcon`
-
-|Large
-|`createLargeIcon`
+|`createInitials(String)`
+|Creates an avatar with the given initials.
 |===
-
-Combinations can be created with `createIcon(IconSize, TextColor, VaadinIcon)`, e.g. `UIUtils.createIcon(IconSize.M, TextColor.TERTIARY, VaadinIcon.HOME);`.
 
 === Customise the Utility Classes
 It is advised to create and modify the utility classes according to your needs. Creating custom components and utility methods for reoccurring UI patterns will make the code more consistent and easier to maintain.
