@@ -250,9 +250,9 @@ component.addClassNames(
 );
 
 // FlexBoxLayout API
-content.setMargin(Left.S);
-content.setPadding(Vertical.XL);
-content.setSpacing(Bottom.S);
+flexBoxLayout.setMargin(Left.S);
+flexBoxLayout.setPadding(Vertical.XL);
+flexBoxLayout.setSpacing(Bottom.S);
 ----
 
 === Utility Classes
