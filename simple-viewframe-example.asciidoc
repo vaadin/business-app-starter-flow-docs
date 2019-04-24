@@ -17,7 +17,7 @@ The three main methods of `ViewFrame` are:
 These slots can contain any component and any number of components. The content slot will take up any available vertical space and scroll automatically upon overflow.
 
 == Example
-A simple example view using default Vaadin components.
+A simple example view using default Vaadin components. For more advanced examples see the views located in the `com.vaadin.starter.business.ui.views` package.
 
 [source,java]
 ----
@@ -66,7 +66,7 @@ image::images/03/example.png[]
 
 If we wanted to distinguish the slots from one another, we could utilise some of the styles that the Business App Starter provides, e.g. *borders* and *shadows*.
 
-== Borders
+=== Borders
 To apply borders to any `Component` call `addClassName(BoxShadowBorders.<DIRECTION>)`. Adding a bottom and top border on the header and footer respectively:
 
 [source,java]
@@ -77,7 +77,7 @@ footer.addClassName(BoxShadowBorders.TOP);
 
 image::images/03/example-borders.png[]
 
-== Shadows
+=== Shadows
 Applying shadows using `addClassName`:
 [source,java]
 ----
@@ -93,7 +93,7 @@ UIUtils.setShadow(Shadow.S, header, footer);
 
 image::images/03/example-shadows.png[]
 
-== Background Color
+=== Background Color
 You can also change the background color on the server-side using `UIUtils`.
 [source,java]
 ----
@@ -102,4 +102,4 @@ UIUtils.setBackgroundColor(LumoStyles.Color.BASE_COLOR, header, footer);
 
 image::images/03/example-background.png[]
 
-For more information on how to theme your application using the various Business App Starter utilities please see link:https://vaadin.com[Styling & Theming].
+For more information on how to theme your application using the various Business App Starter utilities please see link:https://vaadin.com/docs/v13/business-app/overview.html[Overview], link:https://vaadin.com/docs/v13/business-app/theming-whitespace.html[Theming: Whitespace] and link:https://vaadin.com/docs/v13/business-app/theming-typography.html[Theming: Typography].

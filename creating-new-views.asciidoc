@@ -8,7 +8,7 @@ layout: page
 
 The bare minimum needed when creating a new view is to define the `Route`, and to extend `Component` directly (*example 1*) or indirectly (*example 2*).
 
-You can also extend `ViewFrame` to build a view with a header, scrollable content and footer (*example 3*). All of the views that ship with the Business App Starter are built using `ViewFrame`. They are located in the `com.vaadin.starter.business.ui.views` package.
+You can also extend `ViewFrame` to build a view with a header, scrollable content and footer (*example 3*). Most of the Business App Starter views are built with `ViewFrame`. They are located in the `com.vaadin.starter.business.ui.views` package.
 
 == Example 1: Extending Component
 
