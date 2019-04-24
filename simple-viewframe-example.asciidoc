@@ -102,4 +102,4 @@ UIUtils.setBackgroundColor(LumoStyles.Color.BASE_COLOR, header, footer);
 
 image::images/example-background.png[]
 
-For more information on how to theme your application using the various Business App Starter utilities please see link:https://vaadin.com/docs/v13/business-app/overview.html[Overview], link:https://vaadin.com/docs/v13/business-app/theming-whitespace.html[Theming: Whitespace] and link:https://vaadin.com/docs/v13/business-app/theming-typography.html[Theming: Typography].
+For more information on how to theme your application using the various Business App Starter utilities please see link:https://vaadin.com/docs/v13/business-app/theming.html[Theming].
