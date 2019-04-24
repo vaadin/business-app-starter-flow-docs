@@ -323,16 +323,19 @@ UIUtils.createButton(
 
 ==== Misc
 |===
-|Method|Description
+|Method|Description|Example
 
 |`setColSpan`
 |Sets the column span for components in a `FormLayout`.
+|`UIUtils.setColSpan(2, field);`
 
 |`createFloatingActionButton`
-|Initialises a floating action button positioned in the bottom right corner of its container. Used for primary actions.
+|Initialises a `Button` positioned in the bottom right corner of its container. Used for primary actions.
+|`UIUtils.createFloatingActionButton(VaadinIcon.PLUS);`
 
 |`createInitials`
 |Creates an avatar with the given initials.
+|`UIUtils.createInitials("JK");`
 |===
 
 ==== Numbers
