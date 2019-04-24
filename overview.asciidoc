@@ -389,10 +389,11 @@ UIUtils.createButton(
 |`createLargeIcon`
 |===
 
-If other variations or combinations are needed use `createIcon(IconSize, TextColor, VaadinIcon)`.
+Combinations can be created with `createIcon(IconSize, TextColor, VaadinIcon)`.
 
 [source,java]
 ----
+// A medium-sized tertiary icon.
 UIUtils.createIcon(IconSize.M, TextColor.TERTIARY, VaadinIcon.HOME);
 ----
 
