@@ -293,10 +293,10 @@ UIUtils.createErrorButton("Error", VaadinIcon.WARNING);
 
 // Small tertiary button, text and icon.
 UIUtils.createButton(
-  "Tertiary Small",
+  "Small tertiary",
   VaadinIcon.HOME,
-  ButtonVariant.LUMO_TERTIARY,
-  ButtonVariant.LUMO_SMALL
+  ButtonVariant.LUMO_SMALL,
+  ButtonVariant.LUMO_TERTIARY
 );
 ----
 
@@ -352,6 +352,14 @@ UIUtils.createButton(
 |Initialises a monospaced H5 label for improved legibility of integer values.
 |===
 
+==== Dates
+|===
+|Method|Description
+
+|`formatDate`
+|Formats a `LocalDate` according to the format defined in `UIUtils`.
+|===
+
 ==== Icons
 |===
 |Variant|Method
@@ -383,13 +391,10 @@ UIUtils.createButton(
 
 If other variations or combinations are needed use `createIcon(IconSize, TextColor, VaadinIcon)`.
 
-==== Dates
-|===
-|Method|Description
-
-|`formatDate`
-|Formats a `LocalDate` according to the format defined in `UIUtils`.
-|===
+[source,java]
+----
+UIUtils.createIcon(IconSize.M, TextColor.TERTIARY, VaadinIcon.HOME);
+----
 
 === Customise the Utility Classes
 It is advised to create and modify the utility classes according to your needs. Creating custom components and utility methods for reoccurring UI patterns will make the code more consistent and easier to maintain.
