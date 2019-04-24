@@ -257,7 +257,7 @@ A number of utility classes, most importantly `UIUtils`, were introduced to make
 The methods below accept `String` and/or `VaadinIcon`.
 
 |===
-|Variant|Method
+|Variant|UIUtils Method
 
 |Primary
 |`createPrimaryButton`
@@ -278,20 +278,20 @@ The methods below accept `String` and/or `VaadinIcon`.
 |`createSmallButton`, `createLargeButton`
 |===
 
-Combinations can be created with `createButton(ButtonVariant...)`.
+Combinations can be created with `createButton(String, ButtonVariant...)`, `createButton(VaadinIcon, ButtonVariant...)` and `createButton(String, VaadinIcon, ButtonVariant...)`.
 
 [source,java]
 ----
-// Primary button, text only.
+// Primary button (text only)
 UIUtils.createPrimaryButton("Primary");
 
-// Success button, icon only.
+// Success button (icon only)
 UIUtils.createSuccessButton(VaadinIcon.CHECK);
 
-// Error button, text and icon.
+// Error button (text and icon)
 UIUtils.createErrorButton("Error", VaadinIcon.WARNING);
 
-// Small tertiary button, text and icon.
+// Small tertiary button (text and icon)
 UIUtils.createButton(
   "Small tertiary",
   VaadinIcon.HOME,
@@ -302,23 +302,19 @@ UIUtils.createButton(
 
 ==== Labels
 |===
-|Type|Method|Example
+|Type|Method
 
 |Color
 |`createLabel(TextColor, String)`
-|`UIUtils.createLabel(TextColor.PRIMARY, "Primary label");`
 
 |Size
 |`createLabel(FontSize, String)`
-|`UIUtils.createLabel(FontSize.S, "Small label");`
 
 |Size & color
 |`createLabel(FontSize, TextColor, String)`
-|`UIUtils.createLabel(FontSize.S, TextColor.PRIMARY, "Small primary label");`
 
 |Heading
 |`createH1Label(String)`, `createH2Label(String)`, `createH3Label(String)`, `createH4Label(String)`, `createH5Label(String)`, `createH6Label(String)`
-|`UIUtils.createH1Label("H1 label");`
 |===
 
 ==== Misc
@@ -356,7 +352,7 @@ UIUtils.createButton(
 |===
 |Method|Description
 
-|`formatDate`
+|`formatDate(LocalDate)`
 |Formats a `LocalDate` according to the format defined in `UIUtils`.
 |===
 
