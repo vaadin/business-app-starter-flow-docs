@@ -201,17 +201,25 @@ UIUtils.setBackgroundColor(LumoStyles.Color.Contrast._20, component);
 https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/styles.html
 
 |===
-|Color|Values
+|Color|Values|Example
 
 |`BorderRadius`
 |`S`, `M`, `L`, `_50`
+|`UIUtils.setBorderRadius(BorderRadius.L, component);`
 
 |`BoxShadowBorders`
 |`BOTTOM`, `LEFT`, `RIGHT`, `TOP`
+|`component.addClassName(BoxShadowBorders.BOTTOM);`
 
 |`Shadow`
 |`S`, `M`, `L`, `XL`
+|`UIUtils.setShadow(Shadow.L, component);`
 |===
+
+[source,java]
+----
+UIUtils.setBackgroundColor(LumoStyles.Color.Contrast._20, component);
+----
 
 ==== Sizing and Spacing
 https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/sizing-and-spacing.html
@@ -231,6 +239,21 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/sizing-and-spacing.html
 |`XS`, `S`, `M` (default), `L`, `XL`
 |`BOTTOM`, `LEFT`, `RIGHT`, `TOP`, `HORIZONTAL`, `VERTICAL`, `TALL`, `UNIFORM` (default), `WIDE`
 |===
+
+[source,java]
+----
+// Using class names
+component.addClassNames(
+  LumoStyles.Margin.Left.S,
+  LumoStyles.Padding.Vertical.XL,
+  LumoStyles.Spacing.Bottom.M
+);
+
+// FlexBoxLayout API
+content.setMargin(Left.S);
+content.setPadding(Vertical.XL);
+content.setSpacing(Bottom.S);
+----
 
 === Utility Classes
 A number of utility classes, most importantly `UIUtils`, were introduced to make theming more consistent and efficient.
