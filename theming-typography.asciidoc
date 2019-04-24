@@ -21,20 +21,20 @@ Lumo defines 8 different font sizes: `XXS`, `XS`, `S`, `M` (default), `L`, `XL`,
 
 image::images/font-size.png[align=center]
 
-The Business App Starter makes it easy to create labels of a specific size (*example 1*). You can also set the font size for other components using class names (*example 2*).
+`UIUtils` can create labels of a specific size (*example 1*) and set the font size of any component (*example 2*).
 
-=== Example 1: Using UIUtils
+=== Example 1
 Creating a label with a specific font size.
 [source,java]
 ----
 UIUtils.createLabel(FontSize.XL, "Hello World!");
 ----
 
-=== Example 2: Using Class Name
-You _can_ also apply a class name to set the font size.
+=== Example 2
+Setting the font size of any component.
 [source,java]
 ----
-component.addClassName(FontSize.XL.getClassName());
+UIUtils.setFontSize(FontSize.XL, component);
 ----
 
 == Text Color
@@ -42,36 +42,32 @@ There are 11 text colors in Lumo: `HEADER`, `BODY` (default), `SECONDARY`, `TERT
 
 image::images/text-color.png[align=center]
 
-You can use `UIUtils` to create labels with a specific text color (*example 3*). For other components you can use class names (*example 4*).
-
-=== Example 3: Using UIUtils
+=== Example 3
 Creating a label with a specific text color.
 [source,java]
 ----
 UIUtils.createLabel(TextColor.PRIMARY, "Hello World!");
 ----
 
-=== Example 4: Using Class Name
-You _can_ also apply a class name to set the text color.
+=== Example 4
+Setting the text color of any component.
 [source,java]
 ----
-component.addClassName(TextColor.PRIMARY.getClassName());
+UIUtils.setTextColor(TextColor.PRIMARY, component);
 ----
 
 == Combining Font Size & Text Color
-=== Example 5: Using UIUtils
+=== Example 5
 Creating a label with a specific font size and text color.
 [source,java]
 ----
 UIUtils.createLabel(FontSize.S, TextColor.SUCCESS, "Hello World!");
 ----
 
-=== Example 6: Using Class Names
-You _can_ also apply a class names to try and set the text color.
+=== Example 6
+Setting the font size and text color of any component.
 [source,java]
 ----
-component.addClassNames(
-  FontSize.S.getClassName(),
-  TextColor.SUCCESS.getClassName()
-);
+UIUtils.setFontSize(FontSize.S, component);
+UIUtils.setTextColor(TextColor.SUCCESS, component);
 ----
