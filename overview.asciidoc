@@ -192,6 +192,11 @@ https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/colors.html
 |`_5`, `_10`, `_20`, `_30`, `_40`, `_50`, `_60`, `_70`, `_80`, `_90`, `_100`
 |===
 
+[source,java]
+----
+UIUtils.setBackgroundColor(LumoStyles.Color.Contrast._20, component);
+----
+
 ==== Style
 https://cdn.vaadin.com/vaadin-lumo-styles/1.4.2/demo/styles.html
 
