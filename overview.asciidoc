@@ -6,7 +6,7 @@ layout: page
 
 = Business App Starter
 
-A starter for building responsive business web apps. It contains a collection of components, view templates, theming utilities and best practises that can help teams save more than a week of development time at the start of a new project.
+Business App Starter is a commercial Vaadin starter for building responsive business web apps. It contains a collection of components, view templates, theming utilities and best practises that can help teams save more than a week of development time at the start of a new project. It makes use of Vaadin's free and open source framework and components, as well as commercial components and tools like Charts and TestBench.
 
 == Features
 * Application header with avatar & tab support
